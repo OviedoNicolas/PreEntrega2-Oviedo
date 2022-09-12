@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@100;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@100&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: #262626;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    background-color:#000000a8;
+    position: fixed;
+    width: 100%;
+    height: 130px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.nav-general{
+    margin-right: 20px;
+}
+.nav-trabajos{
+    margin-left: 20px;
+}
+
+p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px;
+    }
+
+.boton{
+    color: #f183c3;
+    border: 2px solid #f183c3;
+    padding: 15px 25px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.boton:hover{
+    color: #fff;
+    background-color: #f183c3;
+}
+
+a:hover{
+    color: #f183c3;
+}
+
+h2{
+    font-size: 80px;
+    padding-top: 250px;
+    display: block;
+    width: 950px;
+}
+span{
+    font-weight: 500;
+}
+
+.home-container{
+    display: flex;
+    height: 700px;
+    background-image: url(../img/banner-home.jpg);
+    padding-left: 40px;
+    justify-content: flex-start;
+}
+
+.home-banner{
+
+    margin-left: 300px;
+}
+
+.boton-banner{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 100px;
+    margin: 30px;
+}
+
+.conoceme{
+    display: grid;
+    grid-template-columns: 960px 960px;
+    grid-template-areas: 
+    "foto titulo"
+    "foto titulo"
+    "foto parrafo"
+    "foto parrafo"
+    "foto boton";
+}
+
+.conoceme{
+    margin-top: 100px;
+}
+.conoceme p{
+    font-size: 23px;
+    margin-left: 30px;
+    margin-top: -50px;
+    grid-area: parrafo;
+    width: 600px;
+}
+
+.conoceme__foto{
+    width: 625px;
+}
+
+.conoceme__foto-container{
+    grid-area: foto;
+    justify-self: end;
+    margin-top: 50px;
+}
+
+.conoceme a{
+    margin: 30px;
+    grid-area: boton;
+}
+
+.conoceme h1{
+    grid-area: titulo;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.trabajos-container{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trabajos{
+    display: flex;
+}
+
+.trabajos__ind{
+    margin: 50px;
+    width: 350px;
+    height: 450px;
+    background-color: #2d2d2d;
+    border-radius: 20px;
+    box-shadow: 20px 20px 15px 0 #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h3{
+    color: #f183c3;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.trabajos__ind--iconos{
+    width: 150px;
+    margin-top: -85px;
+}
+
+.trabajos p{
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 300px;
+}
+
+.trabajos__titulo{
+    color: #f183c3;
+    padding: 50px;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.trabajos__boton-container{
+    margin-bottom: 50px;
+}
+.trabajos a{
+    margin: 20px;
+}
+
+footer{
+    background-color: #2d2d2d;
+}
+
+.banner{
+    margin-top: -30px;
+}
+
+.banner h1{
+    padding-top: 150px;
+}
+
+.contactform{
+    padding-top: 150px;
+    background-color: #2d2d2d;
+}
