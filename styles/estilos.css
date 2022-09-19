@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@100;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@100&display=swap');
 
-
+/* Estilos generales del sitio*/
 * {
     padding: 0;
     margin: 0;
@@ -11,270 +11,207 @@
 }
 
 body{
-    width: 100%;
-    background-color: #262626;   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-header{
-    background-color:#000000a8;
-    position: fixed;
-    width: 100%;
-    height: 130px;
-    z-index: 100;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.nav-general{
-    margin-right: 20px;
-}
-.nav-trabajos{
-    margin-left: 20px;
+    background-color: #262626;
 }
 
 p{
     font-family: 'Barlow', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 a{
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
-
-nav li{
-    display: inline-block;
-    padding: 10px;
-    }
+a:hover{
+    color: #f183c3;
+}
 
 .boton{
     color: #f183c3;
     border: 2px solid #f183c3;
-    padding: 15px 25px;
-    border-radius: 10px;
-    height: 100px;
+    padding: 0.9375rem 1.5625rem;
+    border-radius: 0.625rem;
+    height: 6.25rem;
 }
-
 .boton:hover{
     color: #fff;
     background-color: #f183c3;
 }
 
-a:hover{
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: clamp(65px, 20vw, 130px);
+}
+
+/* Header y navbar, ésta última formada por funciones de bootstrap 5.1 y modificada segun las necesidades propias*/
+
+header{
+    background-color:#262626;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: clamp(65px, 10vw, 130px);
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.navbar>.container-fluid{
+    height: 100%;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: min(251px, 60%);
+}
+
+.navbar-brand img{
+    width: 100%;
+}
+
+.navbar-toggler{
+    font-size: min(.8rem + 1vw, 2rem);
+}
+
+.navbar-collapse {
+    background-color: #262626;
+    margin: 8px -12px;
+    padding-left: 12px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: clamp(10px, 10px + 1vw, 20px);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
     color: #f183c3;
 }
 
-h1{
-    font-size: 80px;
-    padding-top: 250px;
-    display: block;
-    width: 950px;
+nav li{
+    padding: 0.4375rem;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: #f183c3;
+
+}
+
+/* Hero de la página principal*/
+
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/fondorosa.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+.hero-banner{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo-hero{
+    font-size: clamp(5vw, 8vh , 60px);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    width: 100%;
 }
 span{
-    font-weight: 500;
+    font-weight: 900;
+    width: 100%;
 }
 
-.home-container{
-    display: flex;
-    height: 700px;
-    background-image: url(../img/banner-home.jpg);
-    padding-left: 40px;
-    justify-content: flex-start;
+.boton-hero{
+    font-size: 1.25rem;
 }
 
-.home-banner{
-
-    margin-left: 300px;
+.boton-hero .boton{
+    color: #f183c3;
+    background-color: #fff;
+    border: #fff;
 }
 
-.boton-banner{
-    margin-top: 40px;
-    font-size: 20px;
+.boton-hero a{
+    font-size:clamp(3vw, 3vh , 60px);
 }
 
-h2{
-    font-size: 100px;
-    margin: 30px;
-}
+
+/* Seccion Mi historia*/
 
 .conoceme{
     display: grid;
-    grid-template-columns: 960px 960px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1 1fr;
     grid-template-areas: 
-    "foto titulo"
-    "foto titulo"
-    "foto parrafo"
-    "foto parrafo"
-    "foto boton";
+    "titulo"
+    "titulo"
+    "foto"
+    "foto"
+    "foto"
+    "parrafo"
+    "parrafo"
+    "boton";
 }
 
-.conoceme{
-    margin-top: 100px;
+.conoceme h1{
+    grid-area: titulo;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 900;
+    font-size: clamp(41px, 15vw , 60px);
+    text-align: center;
 }
+
 .conoceme p{
-    font-size: 23px;
-    margin-left: 30px;
-    margin-top: -50px;
+    font-size: 14px;
     grid-area: parrafo;
-    width: 600px;
+    width: 100vw;
+    text-align: center;
+    padding: 0px 10px;
 }
 
 .conoceme__foto{
-    width: 625px;
+    width: 100%;
 }
 
 .conoceme__foto-container{
     grid-area: foto;
-    justify-self: end;
+    justify-self: center;
     margin-top: 50px;
+    width: min(80vw, 80vh);
 }
 
 .conoceme a{
     margin: 30px;
     grid-area: boton;
+    font-size: .9rem;
 }
 
-.conoceme h2{
-    grid-area: titulo;
-    margin-top: 100px;
-    margin-bottom: 0;
-}
+
+/* Tarjetas proyectos*/
 
 .trabajos-container{
     margin-top: 100px;
@@ -375,32 +312,40 @@ footer{
 
 .proyectos__img{
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-.proyectos__img img{
-    transform: scale(1.1);
-}
 
 .proyectos__img:hover img{
-    transform: scale(1.17);
+    transform: scale(1.15);
     transition: .5s;
     opacity: .2;
 }
 
 .proyectos__texto{
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
     position: absolute;
-    visibility: hidden;
+    visibility: hidden ;
+    width: 150px;
+    text-align: center;
 }
 
-.proyectos__img:hover .proyectos__texto{
+.proyectos__img:hover .contenedor__angosto{
     visibility: visible;
-    margin-top: -250px;
     opacity: 1;
     transition: 1s;
+    margin-top: 50%;
+}
+.proyectos__img:hover .contenedor__ancho{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    margin-top: 25% ;
 }
 
 .kuki{
@@ -432,7 +377,7 @@ footer{
 }
 
 .habilidades{
-    margin-top: 100px;
+    margin-top: 50px;
     height: 600px;
     background-image: url(../img/fondorosa.jpg);
     display: flex;
@@ -443,7 +388,7 @@ footer{
 .habilidades__titulo{
     font-size: 100px;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .habilidades__logos{
@@ -456,12 +401,12 @@ footer{
 @keyframes mover{
     from{
         transform: translateY(0px);
-        filter: drop-shadow(0px 10px 1px rgba(0,0,0,.5));
+        filter: drop-shadow(0px 10px 1px #26262648);
     }
 
     to{
         transform: translateY(-15px);
-        filter: drop-shadow(0px 35px 15px rgba(0,0,0,1));
+        filter: drop-shadow(0px 25px 12px #2d2d2dee);
     }   
 }
 
@@ -516,4 +461,56 @@ footer{
     animation-direction: alternate;
     animation-delay: 1s;
     animation-timing-function: ease-in-out;
+}
+
+/*
+@media only screen and (min-width: 992px) {
+    h1{
+    font-size: 6.25rem;
+    margin: 1.875rem;
+}
+
+.conoceme{
+    display: grid;
+    grid-template-columns: 2 1fr;
+    grid-template-areas: 
+    "foto titulo"
+    "foto titulo"
+    "foto parrafo"
+    "foto parrafo"
+    "foto boton";
+}
+
+.conoceme{
+    margin-top: 100px;
+}
+.conoceme p{
+    font-size: 23px;
+    margin-left: 30px;
+    margin-top: -50px;
+    grid-area: parrafo;
+    width: 600px;
+}
+
+.conoceme__foto{
+    width: 625px;
+}
+
+.conoceme__foto-container{
+    grid-area: foto;
+    justify-self: end;
+    margin-top: 50px;
+}
+
+.conoceme a{
+    margin: 30px;
+    grid-area: boton;
+}
+
+.conoceme h1{
+    grid-area: titulo;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
 }
