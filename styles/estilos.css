@@ -40,19 +40,33 @@ a:hover{
     background-color: #f183c3;
 }
 
+footer{
+    background-color: #2d2d2d;
+}
+
+.contactform{
+    padding-top: 150px;
+    background-color: #2d2d2d;
+}
+
 html{
     scroll-behavior: smooth;
     scroll-padding-top: clamp(65px, 20vw, 130px);
 }
 
+img{
+    width: 100%;
+}
+
 /* Header y navbar, ésta última formada por funciones de bootstrap 5.1 y modificada segun las necesidades propias*/
 
 header{
-    background-color:#262626;
+    background-color:#121212;
     position: fixed;
     width: 100%;
     z-index: 10;
     height: clamp(65px, 10vw, 130px);
+    box-shadow: 10px 0px 5px #262626;
 }
 
 .navbar{
@@ -144,7 +158,7 @@ span{
 }
 
 .boton-hero{
-    font-size: 1.25rem;
+    font-size: .9rem;
 }
 
 .boton-hero .boton{
@@ -193,7 +207,7 @@ span{
     padding: 0px 10px;
 }
 
-.conoceme__foto{
+.conoceme__foto-container img{
     width: 100%;
 }
 
@@ -204,17 +218,28 @@ span{
     width: min(80vw, 80vh);
 }
 
+.boton-conoceme{
+    margin: 20px auto;
+}
+
 .conoceme a{
-    margin: 30px;
     grid-area: boton;
     font-size: .9rem;
 }
 
 
-/* Tarjetas proyectos*/
+/* Seccion Tarjetas de trabajos*/
+
+.trabajos__titulo{
+    color: #f183c3;
+    font-size: clamp(41px, 15vw , 60px);
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
 
 .trabajos-container{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -222,12 +247,14 @@ span{
 
 .trabajos{
     display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .trabajos__ind{
     margin: 50px;
-    width: 350px;
-    height: 450px;
+    width: 256px;
+    height: 256px;
     background-color: #2d2d2d;
     border-radius: 20px;
     box-shadow: 20px 20px 15px 0 #121212;
@@ -239,29 +266,23 @@ span{
 
 h3{
     color: #f183c3;
-    font-size: 40px;
-    margin: 10px;
+    font-size: 25px;
+    margin: 10%;
+    font-weight: 900;
+    text-align: center;
 }
 
 .trabajos__ind--iconos{
-    width: 150px;
+    width: 130px;
     margin-top: -85px;
 }
 
-.trabajos p{
-    margin-bottom: 0px;
-    font-size: 20px;
-    padding-bottom: 50px;
-    text-align: center;
-    width: 300px;
+.trabajos__ind--iconos img{
+    width: 100%;
 }
 
-.trabajos__titulo{
-    color: #f183c3;
-    padding: 50px;
-    font-size: 100px;
-    text-align: center;
-    margin-bottom: 100px;
+.trabajos p{
+    display: none;
 }
 
 .trabajos__boton-container{
@@ -269,51 +290,45 @@ h3{
 }
 .trabajos a{
     margin: 20px;
+    font-size: .9rem;
 }
 
-footer{
-    background-color: #2d2d2d;
-}
 
-.banner{
-    margin-top: -30px;
-}
+/* Tarjetas proyectos*/
 
-.banner h1{
-    padding-top: 150px;
-}
 
-.contactform{
-    padding-top: 150px;
-    background-color: #2d2d2d;
-}
 
 .proyectos__container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 .proyectos__titulo{
-    font-size: 100px;
-    width: 100vw;
-    margin-top: 100px;
-    padding-bottom: 100px;
+    font-size: clamp(41px, 15vw , 60px);
+    font-weight: 900;
+    width: 90vw;
+    margin-top: 50px;
+    padding-bottom: 50px;
     color: #f183c3;
     text-align: center;
 }
 .proyectos__imgcont{
     display: grid;
-    grid-template-columns: 6 1fr;
+    grid-template-columns: 2 1fr;
     grid-template-areas: 
-    "kuki kuki timestop timestop interwarp conan"
-    "kuki kuki picky gilipollas bedel bedel";
-    gap: 3px;
+    "timestop timestop"
+    "picky gilipollas"
+    "bedel bedel"
+    "interwarp conan"
+    "kuki kuki";
+    gap: 3px 1.5px;
 }
 
 .proyectos__img{
     overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -326,26 +341,21 @@ footer{
 
 .proyectos__texto{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 900;
     text-transform: uppercase;
     position: absolute;
     visibility: hidden ;
     width: 150px;
     text-align: center;
+    transform: translateY(-1000%);
 }
 
-.proyectos__img:hover .contenedor__angosto{
+.proyectos__img:hover .proyectos__texto{
     visibility: visible;
     opacity: 1;
     transition: 1s;
-    margin-top: 50%;
-}
-.proyectos__img:hover .contenedor__ancho{
-    visibility: visible;
-    opacity: 1;
-    transition: 1s;
-    margin-top: 25% ;
+    transform: translateY(0);
 }
 
 .kuki{
@@ -375,6 +385,9 @@ footer{
 .bedel{
     grid-area: bedel;
 }
+
+
+/* Tarjetas proyectos*/
 
 .habilidades{
     margin-top: 50px;
@@ -513,4 +526,151 @@ footer{
     margin-bottom: 0;
 }
 
+.trabajos__titulo{
+    color: #f183c3;
+    font-size: clamp(41px, 15vw , 60px);
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 100px;
+}
+
+.trabajos-container{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.trabajos{
+    display: flex;
+    flex-direction: column;
+}
+
+.trabajos__ind{
+    margin: 50px;
+    width: 350px;
+    height: 450px;
+    background-color: #2d2d2d;
+    border-radius: 20px;
+    box-shadow: 20px 20px 15px 0 #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h3{
+    color: #f183c3;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.trabajos__ind--iconos{
+    width: 150px;
+    margin-top: -85px;
+}
+
+.trabajos p{
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 300px;
+}
+
+.trabajos__boton-container{
+    margin-bottom: 50px;
+}
+.trabajos a{
+    margin: 20px;
+}
+
+.proyectos__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.proyectos__titulo{
+    font-size: clamp(41px, 15vw , 60px);
+    font-weight: 900;
+    width: 100vw;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    color: #f183c3;
+    text-align: center;
+}
+.proyectos__imgcont{
+    display: grid;
+    grid-template-columns: 6 1fr;
+    grid-template-areas: 
+    "kuki kuki timestop timestop interwarp conan"
+    "kuki kuki picky gilipollas bedel bedel";
+    gap: 3px;
+}
+
+.proyectos__img{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.proyectos__img:hover img{
+    transform: scale(1.15);
+    transition: .5s;
+    opacity: .2;
+}
+
+.proyectos__texto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    visibility: hidden ;
+    width: 150px;
+    text-align: center;
+}
+
+.proyectos__img:hover .contenedor__angosto{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    margin-top: 50%;
+}
+.proyectos__img:hover .contenedor__ancho{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    margin-top: 25% ;
+}
+
+.kuki{
+    grid-area: kuki;
+}
+
+.timestop{
+    grid-area: timestop;
+}
+
+.interwarp{
+    grid-area: interwarp;
+}
+
+.conan{
+    grid-area: conan;
+}
+
+.picky{
+    grid-area: picky;
+}
+
+.gilipollas{
+    grid-area: gilipollas;
+}
+
+.bedel{
+    grid-area: bedel;
 }
