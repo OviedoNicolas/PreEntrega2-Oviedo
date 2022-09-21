@@ -9,7 +9,7 @@
     <link rel="icon" href="../img/OhCherry-Fabicon.ico">
     <title>Contacto</title>
 </head>
-<body>
+<body class="body-con">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark mx-auto">
             <div class="container-fluid">
@@ -53,11 +53,33 @@
         <div class="hero__contacto--banner">
             <h1 class="hero__contacto--titulo">Contacto</h1>
         </div>
-    </article>
+    </article> 
+<!-- formulario armado con los elementos de bootstrap -->
     <section class="contactform__container">
-
+        <div class="contactform__img">
+            <img src="../img/Foto contacto.png" alt="dibujo de persona en un telefono movil">
+        </div>
+        <div class="contact-form">
+            <h2>Enviame tu consulta</h2>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="nombre">
+                <label for="floatingInput">*Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">*Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="numero de telefono">
+                <label for="floatingInput">*Telefono</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Mensaje</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
     </section>
-    <!-- formulario de contacto pasado en clases -->
     <footer>
         <article class="footer__container">
             <div class="footer__imgContainer">
