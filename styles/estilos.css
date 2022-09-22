@@ -434,7 +434,7 @@ h3{
 }
 
 .habilidades__logos div{
-    width: min(90px, 25vw);
+    width: min(120px, 19vw);
     margin: 9px;
 }
 
@@ -558,7 +558,7 @@ h3{
 /* Página de contacto*/
 
 .hero__contacto{
-    margin-top: clamp(65px, 25vw, 100px);
+    margin-top: clamp(65px, 25vw, 115px);
     background-image: url(../img/fondorosa.jpg);
     background-size: cover;
     max-width: 100vw;
@@ -642,7 +642,7 @@ h3{
 }
 
 .contacto__logos--container h3{
-    font-size: 9px ;
+    font-size: 10px ;
     font-weight: 900;
     color: #262626;
 }
@@ -661,7 +661,7 @@ h3{
 /* Página de Mi historia*/
 
 .hero__historia{
-    margin-top: clamp(65px, 25vw, 100px);
+    margin-top: clamp(65px, 25vw, 115px);
     background-image: url(../img/fondorosa.jpg);
     background-size: cover;
     max-width: 100vw;
@@ -679,6 +679,7 @@ h3{
 
 .sobreMi__img{
 width: min(80vw, 80vh);
+grid-area: s-foto;
 }
 
 .trayectoria{
@@ -725,13 +726,211 @@ width: min(80vw, 80vh);
     width: 60px;
 }
 
+@media only screen and (min-width: 416px) {
+    .premiere{
+        animation-delay: 0s;
+    }
+    .after{
+        animation-delay: 0.40s;
+    }
+
+}
+
+@media only screen and (min-width: 480px) {
+    .footer__container{
+        display: grid; 
+        grid-template-columns: 2fr 2fr 3fr ; 
+        gap: 6px; 
+        grid-template-areas: 
+            "foto pagina contacto";
+    }
+    .contacto__logos--container h3{
+        font-size: 12px;
+        margin: 6%;
+    }
+    .footer__imgContainer {
+        justify-self: center;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    p{
+        font-size: 15px;
+    }
+    .trabajos__ind{
+        width: 350px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .trabajos__ind p{
+        display: block;
+    }
+
+    .trabajos__ind h3{
+        margin: 0%;
+    }
+    .habilidades__titulo {
+        font-size: 50px;
+    }
+    .footer__container a {
+        font-size: 15px;
+    }
+    .footer__contacto p {
+        font-size: 17px;
+    }
+    .h2, h2 {
+        font-size: 40px;
+    }
+    .conocimientos__logo h3 {
+        font-size: 19px;
+    }
+    .container p{
+        display: block;
+        margin: 10px 0px;
+        grid-area: c-parrafo;
+        text-align: start;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 2 1fr, 1 1fr;
+        grid-template-areas: 
+        "c-foto c-titulo"
+        "c-foto c-parrafo"
+        "c-foto c-logos";
+        align-items: center;
+        justify-items: start;
+    }
+    .conocimientos__titulo{
+        grid-area: c-titulo;
+    }
+    .conocimientos__foto{
+        display: block;
+        grid-area: c-foto;
+    }
+    .conocimientos__logo--container{
+        grid-area: c-logos;
+    }
+    .contacto__section{
+        background: rgb(38,38,38);
+        background: linear-gradient(180deg, rgba(38,38,38,0) 34%, rgba(241,131,195,1) 34%, rgba(241,131,195,1) 100%);
+    }
+    .contacto__logos--container h3{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: clamp(10px, 4px + 1vw, 20px);
+    }
+    .hero-banner {
+        max-width: 1024px;
+    }
+    .titulo-hero {
+        font-size: clamp(5vw, 10vh , 70px);
+    }
+    .navbar-collapse {
+        box-shadow: 0px 0px 0px #ffffff00;
+    }
+    .boton-hero a {
+        font-size: clamp(2vw, 3vh , 40px);
+    }    
+    .boton-hero a:hover {
+        color: #fff;
+        background-color: #262626;
+        font-size: clamp(2vw, 3vh , 40px);
+    }
+    .conoceme{
+        display: grid;
+        justify-items: flex-start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "foto titulo"
+        "foto titulo"
+        "foto parrafo"
+        "foto parrafo"
+        "foto boton";
+    }
+    .conoceme h1 {
+        text-align: start;
+    }
+    .conoceme__foto-container {
+        width: min(67vw, 50vh);
+    }
+    .conoceme p {
+        text-align: start;
+        font-size: 18px;
+    }
+    .boton-conoceme {
+        margin: 0;
+    }
+    .trabajos {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .trabajos__ind {
+        width: 300px;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .sobreMi{
+        display: grid;
+        align-items: center;
+        justify-items: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "s-foto s-titulo"
+        "s-foto s-parrafo";
+        gap: 5px;
+    }
+    .sobreMi__img{
+        width: 350px;
+    }
+    .sobreMi h2{
+        grid-area: s-titulo;
+        align-self: flex-end;
+    }
+    .sobreMi p{
+        text-align: start;
+        grid-area: s-parrafo;
+        padding: 0;
+        align-self: flex-start;
+    }
+    .trayectoria{
+        display: grid;
+        align-items: center;
+        justify-items: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "t-titulo t-foto"
+        "t-parrafo t-foto";
+        gap: 5px;
+    }
+    .trayectoria {
+        margin-top: 30px;
+    }
 
 
 
 
 
 
-/*
+
+
+}
+
+
+/* 
+
+
 @media only screen and (min-width: 992px) {
     h1{
     font-size: 6.25rem;
@@ -1015,4 +1214,5 @@ h3{
     animation-direction: alternate;
     animation-delay: 1s;
     animation-timing-function: ease-in-out;
+}
 }
