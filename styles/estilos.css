@@ -15,7 +15,10 @@ body{
 
 p{
     font-family: 'Barlow', sans-serif;
-    font-size: 1.25rem;
+    font-size: 0.875rem;
+    max-width: 100vw;
+    text-align: center;
+    padding: 0.9375rem 0.625rem;
 }
 
 a{
@@ -219,7 +222,6 @@ span{
 }
 
 .conoceme p{
-    font-size: 14px;
     grid-area: parrafo;
     max-width: 100vw;
     text-align: center;
@@ -543,7 +545,10 @@ h3{
 .footer__contacto p{
     font-size: 12px;
     margin-bottom: 6px;
+    text-align: start;
+    padding: 0;
 }
+
 
 .footer__contacto--img{
     width: 50px;
@@ -672,6 +677,53 @@ h3{
     margin-top: 20px;
 }
 
+.sobreMi__img{
+width: min(80vw, 80vh);
+}
+
+.trayectoria{
+    background-color: #f183c3;
+}
+
+.trayectoria h2{
+    padding-top: 20px;
+}
+
+.trayectoria__img{
+    width: min(80vw, 80vh);
+}
+
+.conocimientos{
+    margin-bottom: 30px;
+}
+
+.conocimientos__foto{
+    display: none;
+}
+
+.conocimientos p{
+    display: none;
+}
+
+.conocimientos__logo--container{
+    max-width: 100vw;
+}
+
+.conocimientos__logo h3{
+    font-size: 12px;
+    color: #fff;
+    margin: 0px 5px;
+}
+
+.conocimientos__logo{
+    display: flex;
+    align-items: center;
+    margin: 9px -11px 0px 3px ;
+}
+
+.conocimientos__img{
+    width: 60px;
+}
 
 
 
