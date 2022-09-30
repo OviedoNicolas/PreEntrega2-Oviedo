@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@100;300;800&display=swap");
-/* Estilos generales del sitio*/
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +9,7 @@
 }
 
 body {
-  background-color: #262626;
+  background-color: #f183c3;
 }
 
 p {
@@ -86,7 +85,6 @@ h4 {
           text-decoration: underline #f183c3;
 }
 
-/* Header y navbar, ésta última formada por funciones de bootstrap 5.1 y modificada segun las necesidades propias*/
 header {
   background-color: #262626;
   position: fixed;
@@ -937,7 +935,7 @@ h3 {
     align-self: flex-start;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .conoceme {
     max-width: 1240px;
   }
