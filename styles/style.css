@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*colores*/
+/*tamaños*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@100;300;800&display=swap");
 * {
   padding: 0;
@@ -9,7 +11,7 @@
 }
 
 body {
-  background-color: #f183c3;
+  background-color: #262626;
 }
 
 p {
@@ -111,10 +113,6 @@ header {
   align-items: center;
   height: 100%;
   max-width: min(251px, 60%);
-}
-
-.navbar-brand img {
-  width: 100%;
 }
 
 .navbar-toggler {
@@ -846,7 +844,7 @@ h3 {
     font-size: clamp(5vw, 10vh, 70px);
   }
   .navbar-collapse {
-    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
   .boton-hero a {
     font-size: clamp(2vw, 3vh, 40px);
