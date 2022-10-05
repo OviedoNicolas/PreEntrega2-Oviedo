@@ -7,6 +7,8 @@
 @import "trabajos";
 @import "proyectos";
 @import "habilidades";
+@import "footer";
+@import "contacto";
 
 
 /* Hero de la página principal*
@@ -361,7 +363,7 @@ h3{
     animation-timing-function: ease-in-out;
 }
 
-/* Footer */
+/* Footer *
 
 .footer__container{
     display: grid; 
@@ -409,12 +411,7 @@ h3{
 }
 
 
-.footer__contacto--img{
-    width: 50px;
-}
-
-
-/* Página de contacto*/
+/* Página de contacto*
 
 .hero__contacto{
     margin-top: clamp(65px, 17vw, 130px);

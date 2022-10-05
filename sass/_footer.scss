@@ -1,0 +1,44 @@
+.footer__container{
+    display: grid; 
+    grid-template-columns: 0.6fr 1.2fr; 
+    gap: 6px; 
+    grid-template-areas: 
+        "foto pagina"
+        "foto contacto";
+    padding-top: 30px;
+
+    .footer__imgContainer{
+        grid-area: foto;
+        width: 100px;
+        justify-self: end ;
+    }
+
+    .footer__paginas{
+        display: flex;
+        flex-direction: column;
+        grid-area: pagina;
+        margin-left: 15px;
+    }
+
+    .footer__contacto{
+        display: flex;
+        flex-direction: column;
+        grid-area: contacto;
+        margin-left: 15px;
+        
+        p{
+            font-size: 12px;
+            margin-bottom: 6px;
+            text-align: start;
+            padding: 0;
+        }
+    }
+
+    ul{
+        padding-left: 0;
+    }
+
+    a{
+        font-size: 10px;
+    }
+}
