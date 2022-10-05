@@ -1,0 +1,46 @@
+.conoceme{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1 1fr;
+    grid-template-areas: 
+    "titulo"
+    "titulo"
+    "foto"
+    "foto"
+    "foto"
+    "parrafo"
+    "parrafo"
+    "boton";
+
+    .conoceme__foto-container{
+        grid-area: foto;
+        justify-self: center;
+        margin-top: 50px;
+        width: min(80vw, 80vh);
+
+        img{
+            width: 100%;
+        }
+    }
+
+    h1{
+        grid-area: titulo;
+    }
+
+    p{
+        grid-area: parrafo;
+        max-width: 100vw;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .boton-conoceme{
+        margin: 20px auto;
+
+        a{
+            grid-area: boton;
+            font-size: .9rem;
+        }
+    }
+}

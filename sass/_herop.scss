@@ -1,0 +1,46 @@
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/fondorosa.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+
+    .hero-banner{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        p{
+            font-size: clamp(5vw, 6vh , 60px);
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-weight: 100;
+            width: 100%;
+
+            span{
+                font-weight: 900;
+                width: 100%;
+            }            
+        }
+
+        div{
+            font-size: .9rem;
+
+            .boton{
+                color: $color_primario;
+                background-color: $blanco;
+                border: $blanco;
+            }
+
+            a{
+                font-size:clamp(3vw, 3vh , 60px);
+            }
+        }
+    }
+}

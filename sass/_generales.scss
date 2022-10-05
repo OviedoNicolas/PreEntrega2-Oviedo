@@ -73,6 +73,14 @@ h2{
     text-align: center;
 }
 
+h3{
+    color: $color_primario;
+    font-size: 25px;
+    margin: 10%;
+    font-weight: 900;
+    text-align: center;
+}
+
 h4{
     font-size: clamp(10px, 10px + 1vw, 20px);
     font-weight: 900;

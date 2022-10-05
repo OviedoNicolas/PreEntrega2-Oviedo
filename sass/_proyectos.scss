@@ -1,0 +1,87 @@
+.proyectos__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        font-size: clamp(41px, 15vw , 60px);
+        font-weight: 900;
+        width: 90vw;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        color: $color_primario;
+        text-align: center;
+    }
+
+    .proyectos__imgcont{
+        display: grid;
+        grid-template-columns: 2 1fr;
+        grid-template-areas: 
+        "timestop timestop"
+        "picky gilipollas"
+        "bedel bedel"
+        "interwarp conan"
+        "kuki kuki";
+        gap: 3px 1.5px;
+
+        .proyectos__img{
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                font-weight: 900;
+                text-transform: uppercase;
+                position: absolute;
+                visibility: hidden ;
+                width: 150px;
+                text-align: center;
+                transform: translateY(-1000%);
+            }
+        }
+
+        .kuki{
+            grid-area: kuki;
+        }
+        
+        .timestop{
+            grid-area: timestop;
+        }
+        
+        .interwarp{
+            grid-area: interwarp;
+        }
+        
+        .conan{
+            grid-area: conan;
+        }
+        
+        .picky{
+            grid-area: picky;
+        }
+        
+        .gilipollas{
+            grid-area: gilipollas;
+        }
+        
+        .bedel{
+            grid-area: bedel;
+        }
+        
+        .proyectos__img:hover img{
+            transform: scale(1.15);
+            transition: .5s;
+            opacity: .2;
+        }
+        .proyectos__img:hover .proyectos__texto{
+            visibility: visible;
+            opacity: 1;
+            transition: 1s;
+            transform: translateY(0);
+        }
+    }
+}

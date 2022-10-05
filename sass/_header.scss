@@ -26,8 +26,6 @@ header{
     max-width: min(251px, 60%);
 }
 
-
-
 .navbar-toggler{
     font-size: min(.8rem + 1vw, 2rem);
 }
@@ -45,6 +43,10 @@ header{
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
+    color: $color_primario;
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
     color: $color_primario;
 }
 

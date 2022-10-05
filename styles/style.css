@@ -79,6 +79,14 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  color: #f183c3;
+  font-size: 25px;
+  margin: 10%;
+  font-weight: 900;
+  text-align: center;
+}
+
 h4 {
   font-size: clamp(10px, 10px + 1vw, 20px);
   font-weight: 900;
@@ -135,6 +143,10 @@ header {
   color: #f183c3;
 }
 
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #f183c3;
+}
+
 nav li {
   padding: 0.4375rem;
 }
@@ -148,7 +160,6 @@ nav li {
   color: #f183c3;
 }
 
-/* Hero de la página principal*/
 .hero-container {
   display: flex;
   justify-content: center;
@@ -160,43 +171,36 @@ nav li {
   background-repeat: repeat;
   background-position: center center;
 }
-
-.hero-banner {
+.hero-container .hero-banner {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-
-.titulo-hero {
+.hero-container .hero-banner p {
   font-size: clamp(5vw, 6vh, 60px);
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 100;
   width: 100%;
 }
-
-span {
+.hero-container .hero-banner p span {
   font-weight: 900;
   width: 100%;
 }
-
-.boton-hero {
+.hero-container .hero-banner div {
   font-size: 0.9rem;
 }
-
-.boton-hero .boton {
+.hero-container .hero-banner div .boton {
   color: #f183c3;
   background-color: #fff;
   border: #fff;
 }
-
-.boton-hero a {
+.hero-container .hero-banner div a {
   font-size: clamp(3vw, 3vh, 60px);
 }
 
-/* Seccion Mi historia*/
 .conoceme {
   display: grid;
   justify-content: center;
@@ -204,45 +208,30 @@ span {
   grid-template-columns: 1 1fr;
   grid-template-areas: "titulo" "titulo" "foto" "foto" "foto" "parrafo" "parrafo" "boton";
 }
-
+.conoceme .conoceme__foto-container {
+  grid-area: foto;
+  justify-self: center;
+  margin-top: 50px;
+  width: min(80vw, 80vh);
+}
+.conoceme .conoceme__foto-container img {
+  width: 100%;
+}
 .conoceme h1 {
   grid-area: titulo;
 }
-
 .conoceme p {
   grid-area: parrafo;
   max-width: 100vw;
   text-align: center;
   padding: 15px 10px;
 }
-
-.conoceme__foto-container img {
-  width: 100%;
-}
-
-.conoceme__foto-container {
-  grid-area: foto;
-  justify-self: center;
-  margin-top: 50px;
-  width: min(80vw, 80vh);
-}
-
-.boton-conoceme {
+.conoceme .boton-conoceme {
   margin: 20px auto;
 }
-
-.conoceme a {
+.conoceme .boton-conoceme a {
   grid-area: boton;
   font-size: 0.9rem;
-}
-
-/* Seccion Tarjetas de trabajos*/
-.trabajos__titulo {
-  color: #f183c3;
-  font-size: clamp(41px, 15vw, 60px);
-  text-align: center;
-  font-weight: 900;
-  margin-bottom: 50px;
 }
 
 .trabajos-container {
@@ -251,14 +240,19 @@ span {
   align-items: center;
   flex-direction: column;
 }
-
-.trabajos {
+.trabajos-container h2 {
+  color: #f183c3;
+  font-size: clamp(41px, 15vw, 60px);
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.trabajos-container .trabajos {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
-.trabajos__ind {
+.trabajos-container .trabajos article {
   margin: 50px 0px;
   width: 256px;
   height: 256px;
@@ -270,45 +264,27 @@ span {
   align-items: center;
   justify-content: space-evenly;
 }
-
-h3 {
-  color: #f183c3;
-  font-size: 25px;
-  margin: 10%;
-  font-weight: 900;
-  text-align: center;
-}
-
-.trabajos__ind--iconos {
+.trabajos-container .trabajos article .trabajos__ind--iconos {
   width: 130px;
   margin-top: -85px;
 }
-
-.trabajos__ind--iconos img {
-  width: 100%;
-}
-
-.trabajos p {
+.trabajos-container .trabajos p {
   display: none;
 }
-
-.trabajos__boton-container {
+.trabajos-container .trabajos .trabajos__boton-container {
   margin-bottom: 50px;
 }
-
-.trabajos a {
+.trabajos-container .trabajos a {
   margin: 20px;
   font-size: 0.9rem;
 }
 
-/* Tarjetas proyectos*/
 .proyectos__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.proyectos__titulo {
+.proyectos__container h2 {
   font-size: clamp(41px, 15vw, 60px);
   font-weight: 900;
   width: 90vw;
@@ -317,29 +293,20 @@ h3 {
   color: #f183c3;
   text-align: center;
 }
-
-.proyectos__imgcont {
+.proyectos__container .proyectos__imgcont {
   display: grid;
   grid-template-columns: 2 1fr;
   grid-template-areas: "timestop timestop" "picky gilipollas" "bedel bedel" "interwarp conan" "kuki kuki";
   gap: 3px 1.5px;
 }
-
-.proyectos__img {
+.proyectos__container .proyectos__imgcont .proyectos__img {
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-
-.proyectos__img:hover img {
-  transform: scale(1.15);
-  transition: 0.5s;
-  opacity: 0.2;
-}
-
-.proyectos__texto {
+.proyectos__container .proyectos__imgcont .proyectos__img p {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 900;
@@ -350,43 +317,39 @@ h3 {
   text-align: center;
   transform: translateY(-1000%);
 }
-
-.proyectos__img:hover .proyectos__texto {
+.proyectos__container .proyectos__imgcont .kuki {
+  grid-area: kuki;
+}
+.proyectos__container .proyectos__imgcont .timestop {
+  grid-area: timestop;
+}
+.proyectos__container .proyectos__imgcont .interwarp {
+  grid-area: interwarp;
+}
+.proyectos__container .proyectos__imgcont .conan {
+  grid-area: conan;
+}
+.proyectos__container .proyectos__imgcont .picky {
+  grid-area: picky;
+}
+.proyectos__container .proyectos__imgcont .gilipollas {
+  grid-area: gilipollas;
+}
+.proyectos__container .proyectos__imgcont .bedel {
+  grid-area: bedel;
+}
+.proyectos__container .proyectos__imgcont .proyectos__img:hover img {
+  transform: scale(1.15);
+  transition: 0.5s;
+  opacity: 0.2;
+}
+.proyectos__container .proyectos__imgcont .proyectos__img:hover .proyectos__texto {
   visibility: visible;
   opacity: 1;
   transition: 1s;
   transform: translateY(0);
 }
 
-.kuki {
-  grid-area: kuki;
-}
-
-.timestop {
-  grid-area: timestop;
-}
-
-.interwarp {
-  grid-area: interwarp;
-}
-
-.conan {
-  grid-area: conan;
-}
-
-.picky {
-  grid-area: picky;
-}
-
-.gilipollas {
-  grid-area: gilipollas;
-}
-
-.bedel {
-  grid-area: bedel;
-}
-
-/* Logos habilidades con animaciones*/
 .habilidades {
   margin-top: 50px;
   height: 470px;
@@ -395,24 +358,21 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-
-.habilidades__titulo {
+.habilidades h2 {
   font-size: 40px;
   text-align: center;
   width: 80vw;
   font-weight: 900;
   padding-top: 50px;
 }
-
-.habilidades__logos {
+.habilidades .habilidades__logos {
   width: 70%;
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-.habilidades__logos div {
+.habilidades .habilidades__logos div {
   width: min(120px, 19vw);
   margin: 9px;
 }
@@ -522,6 +482,358 @@ h3 {
           animation-delay: 0.4s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+}
+
+/* Hero de la página principal*
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/fondorosa.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+.hero-banner{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo-hero{
+    font-size: clamp(5vw, 6vh , 60px);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    width: 100%;
+}
+span{
+    font-weight: 900;
+    width: 100%;
+}
+
+.boton-hero{
+    font-size: .9rem;
+}
+
+.boton-hero .boton{
+    color: $color_primario;
+    background-color: $blanco;
+    border: $blanco;
+}
+
+.boton-hero a{
+    font-size:clamp(3vw, 3vh , 60px);
+}
+
+
+/* Seccion Mi historia*
+
+.conoceme{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1 1fr;
+    grid-template-areas: 
+    "titulo"
+    "titulo"
+    "foto"
+    "foto"
+    "foto"
+    "parrafo"
+    "parrafo"
+    "boton";
+}
+
+.conoceme h1{
+    grid-area: titulo;
+}
+
+.conoceme p{
+    grid-area: parrafo;
+    max-width: 100vw;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.conoceme__foto-container img{
+    width: 100%;
+}
+
+.conoceme__foto-container{
+    grid-area: foto;
+    justify-self: center;
+    margin-top: 50px;
+    width: min(80vw, 80vh);
+}
+
+.boton-conoceme{
+    margin: 20px auto;
+}
+
+.conoceme a{
+    grid-area: boton;
+    font-size: .9rem;
+}
+
+
+/* Seccion Tarjetas de trabajos*
+
+.trabajos__titulo{
+    color: $color_primario;
+    font-size: clamp(41px, 15vw , 60px);
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.trabajos-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trabajos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.trabajos__ind{
+    margin: 50px 0px;
+    width: 256px;
+    height: 256px;
+    background-color: #2d2d2d;
+    border-radius: 20px;
+    box-shadow: 20px 20px 15px 0 #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h3{
+    color: $color_primario;
+    font-size: 25px;
+    margin: 10%;
+    font-weight: 900;
+    text-align: center;
+}
+
+.trabajos__ind--iconos{
+    width: 130px;
+    margin-top: -85px;
+}
+
+.trabajos__ind--iconos img{
+    width: 100%;
+}
+
+.trabajos p{
+    display: none;
+}
+
+.trabajos__boton-container{
+    margin-bottom: 50px;
+}
+.trabajos a{
+    margin: 20px;
+    font-size: .9rem;
+}
+
+
+/* Tarjetas proyectos*
+
+.proyectos__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyectos__titulo{
+    font-size: clamp(41px, 15vw , 60px);
+    font-weight: 900;
+    width: 90vw;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    color: $color_primario;
+    text-align: center;
+}
+.proyectos__imgcont{
+    display: grid;
+    grid-template-columns: 2 1fr;
+    grid-template-areas: 
+    "timestop timestop"
+    "picky gilipollas"
+    "bedel bedel"
+    "interwarp conan"
+    "kuki kuki";
+    gap: 3px 1.5px;
+}
+
+.proyectos__img{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.proyectos__img:hover img{
+    transform: scale(1.15);
+    transition: .5s;
+    opacity: .2;
+}
+
+.proyectos__texto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    visibility: hidden ;
+    width: 150px;
+    text-align: center;
+    transform: translateY(-1000%);
+}
+
+.proyectos__img:hover .proyectos__texto{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(0);
+}
+
+.kuki{
+    grid-area: kuki;
+}
+
+.timestop{
+    grid-area: timestop;
+}
+
+.interwarp{
+    grid-area: interwarp;
+}
+
+.conan{
+    grid-area: conan;
+}
+
+.picky{
+    grid-area: picky;
+}
+
+.gilipollas{
+    grid-area: gilipollas;
+}
+
+.bedel{
+    grid-area: bedel;
+}
+
+
+/* Logos habilidades con animaciones*
+
+.habilidades{
+    margin-top: 50px;
+    height: 470px;
+    background-image: url(../img/fondorosa.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidades__titulo{
+    font-size: 40px;
+    text-align: center;
+    width: 80vw;
+    font-weight: 900;
+    padding-top: 50px;
+}
+
+.habilidades__logos{
+    width: 70%;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.habilidades__logos div{
+    width: min(120px, 19vw);
+    margin: 9px;
+}
+
+@keyframes mover{
+    from{
+        transform: translateY(0px);
+        filter: drop-shadow(0px 10px 1px #26262648);
+    }
+
+    to{
+        transform: translateY(-15px);
+        filter: drop-shadow(0px 25px 12px #2d2d2dee);
+    }   
+}
+
+.illustrator{
+    animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.photoshop{
+    animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.premiere{
+    animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.20s;
+    animation-timing-function: ease-in-out;
+}
+
+.after{
+    animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.20s;
+    animation-timing-function: ease-in-out;
+}
+
+.corel{
+    animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.40s;
+    animation-timing-function: ease-in-out;
+}
+
+.wordpress{
+    animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.4s;
+    animation-timing-function: ease-in-out;
 }
 
 /* Footer */

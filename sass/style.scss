@@ -2,9 +2,14 @@
 @import "fuentes";
 @import "generales";
 @import "header";
+@import "herop";
+@import "historiap";
+@import "trabajos";
+@import "proyectos";
+@import "habilidades";
 
-/* Hero de la página principal*/
 
+/* Hero de la página principal*
 .hero-container{
     display: flex;
     justify-content: center;
@@ -52,7 +57,7 @@ span{
 }
 
 
-/* Seccion Mi historia*/
+/* Seccion Mi historia*
 
 .conoceme{
     display: grid;
@@ -102,7 +107,7 @@ span{
 }
 
 
-/* Seccion Tarjetas de trabajos*/
+/* Seccion Tarjetas de trabajos*
 
 .trabajos__titulo{
     color: $color_primario;
@@ -168,13 +173,14 @@ h3{
 }
 
 
-/* Tarjetas proyectos*/
+/* Tarjetas proyectos*
 
 .proyectos__container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .proyectos__titulo{
     font-size: clamp(41px, 15vw , 60px);
     font-weight: 900;
@@ -259,7 +265,7 @@ h3{
 }
 
 
-/* Logos habilidades con animaciones*/
+/* Logos habilidades con animaciones*
 
 .habilidades{
     margin-top: 50px;
