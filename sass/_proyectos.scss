@@ -24,6 +24,20 @@
         "kuki kuki";
         gap: 3px 1.5px;
 
+        @media only screen and (min-width: 1024px) {
+                grid-template-columns: 6 1fr;
+                grid-template-areas: 
+                "kuki kuki timestop timestop interwarp conan"
+                "kuki kuki picky gilipollas bedel bedel";
+                gap: 3px;
+            }
+
+        @media only screen and (min-width: 1024px) {
+            img{
+                width: auto;
+            }
+        }
+
         .proyectos__img{
             overflow: hidden;
             display: flex;

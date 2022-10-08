@@ -21,6 +21,11 @@ p {
   text-align: center;
   padding: 0.9375rem 0.625rem;
 }
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 15px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -133,10 +138,20 @@ header {
   padding-left: 12px;
   box-shadow: 0px 2px 10px #121212;
 }
+@media only screen and (min-width: 992px) {
+  .navbar-collapse {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+}
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
   font-size: clamp(10px, 10px + 1vw, 20px);
+}
+@media only screen and (min-width: 992px) {
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: clamp(10px, 4px + 1vw, 20px);
+  }
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -174,20 +189,29 @@ nav li {
 .hero-container .hero-banner {
   display: flex;
   width: 100%;
+  max-width: 1024px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-.hero-container .hero-banner p {
+.hero-container .hero-banner .titulo {
   font-size: clamp(5vw, 6vh, 60px);
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 100;
   width: 100%;
 }
-.hero-container .hero-banner p span {
+@media only screen and (min-width: 992px) {
+  .hero-container .hero-banner .titulo {
+    font-size: clamp(5vw, 10vh, 70px);
+  }
+}
+.hero-container .hero-banner .subtitulo {
+  font-size: clamp(5vw, 6vh, 60px);
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   width: 100%;
+  margin-top: -50px;
 }
 .hero-container .hero-banner div {
   font-size: 0.9rem;
@@ -200,11 +224,21 @@ nav li {
 .hero-container .hero-banner div a {
   font-size: clamp(3vw, 3vh, 60px);
 }
+@media only screen and (min-width: 992px) {
+  .hero-container .hero-banner div a {
+    font-size: clamp(2vw, 3vh, 40px);
+  }
+}
+.hero-container .hero-banner div a:hover {
+  color: #fff;
+  background-color: #262626;
+}
 
 .conoceme {
   display: grid;
   justify-content: center;
   justify-items: center;
+  max-width: 1240px;
   grid-template-columns: 1 1fr;
   grid-template-areas: "titulo" "titulo" "foto" "foto" "foto" "parrafo" "parrafo" "boton";
 }
@@ -217,14 +251,37 @@ nav li {
 .conoceme .conoceme__foto-container img {
   width: 100%;
 }
+@media only screen and (min-width: 992px) {
+  .conoceme .conoceme__foto-container {
+    width: min(67vw, 50vh);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .conoceme .conoceme__foto-container {
+    width: 550px;
+  }
+}
 .conoceme h1 {
   grid-area: titulo;
+}
+@media only screen and (min-width: 992px) {
+  .conoceme h1 {
+    text-align: start;
+    align-self: flex-end;
+  }
 }
 .conoceme p {
   grid-area: parrafo;
   max-width: 100vw;
   text-align: center;
   padding: 15px 10px;
+}
+@media only screen and (min-width: 992px) {
+  .conoceme p {
+    text-align: start;
+    font-size: 18px;
+    align-self: center;
+  }
 }
 .conoceme .boton-conoceme {
   margin: 20px auto;
@@ -233,15 +290,34 @@ nav li {
   grid-area: boton;
   font-size: 0.9rem;
 }
+@media only screen and (min-width: 992px) {
+  .conoceme .boton-conoceme {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .conoceme .boton-conoceme {
+    align-self: flex-start;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .conoceme {
+    display: grid;
+    justify-items: flex-start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "foto titulo" "foto titulo" "foto parrafo" "foto parrafo" "foto boton";
+  }
+}
 
 .trabajos-container {
   margin-top: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(45deg, rgb(241, 131, 195) 0%, rgb(241, 131, 195) 25%, rgba(9, 9, 121, 0) 25%, rgba(230, 125, 192, 0) 75%, rgb(241, 131, 195) 75%, rgb(241, 131, 195) 100%);
 }
 .trabajos-container h2 {
-  color: #f183c3;
+  color: #fff;
   font-size: clamp(41px, 15vw, 60px);
   text-align: center;
   font-weight: 900;
@@ -251,6 +327,16 @@ nav li {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+@media only screen and (min-width: 992px) {
+  .trabajos-container .trabajos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1240px;
+    width: 60%;
+    flex-wrap: wrap;
+  }
 }
 .trabajos-container .trabajos article {
   margin: 50px 0px;
@@ -268,8 +354,35 @@ nav li {
   width: 130px;
   margin-top: -85px;
 }
+@media only screen and (min-width: 768px) {
+  .trabajos-container .trabajos article {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .trabajos-container .trabajos article h3 {
+    margin: 0%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .trabajos-container .trabajos article {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
 .trabajos-container .trabajos p {
   display: none;
+}
+@media only screen and (min-width: 768px) {
+  .trabajos-container .trabajos p {
+    display: block;
+  }
 }
 .trabajos-container .trabajos .trabajos__boton-container {
   margin-bottom: 50px;
@@ -298,6 +411,18 @@ nav li {
   grid-template-columns: 2 1fr;
   grid-template-areas: "timestop timestop" "picky gilipollas" "bedel bedel" "interwarp conan" "kuki kuki";
   gap: 3px 1.5px;
+}
+@media only screen and (min-width: 1024px) {
+  .proyectos__container .proyectos__imgcont {
+    grid-template-columns: 6 1fr;
+    grid-template-areas: "kuki kuki timestop timestop interwarp conan" "kuki kuki picky gilipollas bedel bedel";
+    gap: 3px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .proyectos__container .proyectos__imgcont img {
+    width: auto;
+  }
 }
 .proyectos__container .proyectos__imgcont .proyectos__img {
   overflow: hidden;
@@ -365,9 +490,15 @@ nav li {
   font-weight: 900;
   padding-top: 50px;
 }
+@media only screen and (min-width: 768px) {
+  .habilidades h2 {
+    font-size: 50px;
+  }
+}
 .habilidades .habilidades__logos {
   width: 70%;
   padding-top: 20px;
+  max-width: 1240px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -423,6 +554,12 @@ nav li {
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
+@media only screen and (min-width: 1024px) {
+  .photoshop {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+}
 
 .premiere {
   -webkit-animation-name: mover;
@@ -437,6 +574,18 @@ nav li {
           animation-delay: 0.2s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+}
+@media only screen and (min-width: 416px) {
+  .premiere {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .premiere {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
 }
 
 .after {
@@ -453,6 +602,24 @@ nav li {
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
+@media only screen and (min-width: 416px) {
+  .after {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+}
+@media only screen and (min-width: 789px) {
+  .after {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .after {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+}
 
 .corel {
   -webkit-animation-name: mover;
@@ -467,6 +634,18 @@ nav li {
           animation-delay: 0.4s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+}
+@media only screen and (min-width: 986px) {
+  .corel {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .corel {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+  }
 }
 
 .wordpress {
@@ -483,8 +662,15 @@ nav li {
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
+@media only screen and (min-width: 1024px) {
+  .wordpress {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+}
 
 .footer__container {
+  max-width: 1240px;
   display: grid;
   grid-template-columns: 0.6fr 1.2fr;
   gap: 6px;
@@ -495,6 +681,16 @@ nav li {
   grid-area: foto;
   width: 100px;
   justify-self: end;
+}
+@media only screen and (min-width: 480px) {
+  .footer__container .footer__imgContainer {
+    justify-self: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .footer__container .footer__imgContainer {
+    width: 150px;
+  }
 }
 .footer__container .footer__paginas {
   display: flex;
@@ -514,11 +710,29 @@ nav li {
   text-align: start;
   padding: 0;
 }
+@media only screen and (min-width: 768px) {
+  .footer__container .footer__contacto p {
+    font-size: 17px;
+  }
+}
 .footer__container ul {
   padding-left: 0;
 }
 .footer__container a {
   font-size: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .footer__container a {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    gap: 6px;
+    grid-template-areas: "foto pagina contacto";
+  }
 }
 
 .hero__contacto {
@@ -526,6 +740,9 @@ nav li {
   background-image: url(../img/fondorosa.jpg);
   background-size: cover;
   max-width: 100vw;
+}
+.hero__contacto div {
+  max-width: 1024px;
 }
 .hero__contacto h1 {
   text-align: end;
@@ -537,18 +754,26 @@ nav li {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 100vw;
+  max-width: 1240px;
   margin-top: 20px;
   background-image: url(../img/OhCherry-Background.jpg);
   background-repeat: no-repeat;
   background-position: right center;
+  gap: 50px;
 }
 .contactform__container .contactform__img {
   display: none;
 }
+@media only screen and (min-width: 992px) {
+  .contactform__container .contactform__img {
+    display: block;
+    width: 350px;
+  }
+}
 .contactform__container .contact-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .form-floating > .form-control {
@@ -597,14 +822,31 @@ nav li {
 
 .contacto__section {
   background-color: #f183c3;
-  max-width: 100vw;
   margin-top: 30px;
+  justify-content: center;
+}
+.contacto__section div {
+  display: flex;
+  max-width: 1024px;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .contacto__section .contacto__logos--container h3 {
   font-size: 10px;
   font-weight: 900;
   color: #262626;
+}
+@media only screen and (min-width: 480px) {
+  .contacto__section .contacto__logos--container h3 {
+    font-size: 12px;
+    margin: 6%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contacto__section .contacto__logos--container h3 {
+    font-size: 15px;
+  }
 }
 .contacto__section .contacto__logo {
   display: flex;
@@ -613,6 +855,218 @@ nav li {
 .contacto__section .contacto__logo img {
   width: 50%;
   margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .contacto__section {
+    background: rgb(38, 38, 38);
+    background: linear-gradient(180deg, rgba(38, 38, 38, 0) 34%, rgb(241, 131, 195) 34%, rgb(241, 131, 195) 100%);
+  }
+}
+
+.hero__historia {
+  margin-top: clamp(65px, 17vw, 130px);
+  background-image: url(../img/fondorosa.jpg);
+  background-size: cover;
+  max-width: 1240vw;
+}
+.hero__historia .hero__historia--titulo {
+  text-align: end;
+  font-size: clamp(40px, 12vw, 60px);
+  margin-right: 10px;
+}
+
+.hero__historia--banner {
+  max-width: 1240px;
+}
+
+.sobreMi {
+  margin-top: 20px;
+  max-width: 1240px;
+}
+.sobreMi div {
+  width: min(80vw, 80vh);
+  grid-area: s-foto;
+}
+@media only screen and (min-width: 992px) {
+  .sobreMi div {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .sobreMi div {
+    width: 550px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .sobreMi {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "s-foto s-titulo" "s-foto s-parrafo";
+    gap: 5px;
+  }
+}
+.sobreMi h2 {
+  grid-area: s-titulo;
+  align-self: flex-end;
+}
+.sobreMi p {
+  text-align: start;
+  grid-area: s-parrafo;
+  padding: 0;
+  align-self: flex-start;
+}
+
+.trayectoria {
+  background-color: #f183c3;
+}
+@media only screen and (min-width: 992px) {
+  .trayectoria {
+    background: linear-gradient(135deg, rgb(241, 131, 195) 0%, rgb(241, 131, 195) 63%, rgb(38, 38, 38) 63%, rgb(38, 38, 38) 100%);
+  }
+}
+.trayectoria .trayectoria__container {
+  max-width: 1024px;
+}
+.trayectoria .trayectoria__container h2 {
+  padding-top: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .trayectoria .trayectoria__container h2 {
+    grid-area: t-titulo;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+}
+.trayectoria .trayectoria__container div {
+  width: min(80vw, 80vh);
+}
+@media only screen and (min-width: 992px) {
+  .trayectoria .trayectoria__container div {
+    width: 350px;
+    grid-area: t-foto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .trayectoria .trayectoria__container {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "t-titulo t-foto" "t-parrafo t-foto";
+    gap: 5px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .trayectoria .trayectoria__container p {
+    grid-area: t-parrafo;
+    text-align: start;
+    align-self: flex-start;
+  }
+}
+
+.conocimientos {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  max-width: 1024px;
+}
+.conocimientos .conocimientos__foto {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .conocimientos .conocimientos__foto {
+    display: block;
+    grid-area: c-foto;
+    width: 350px;
+    margin-right: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .conocimientos .container {
+    display: grid;
+    grid-template-columns: 2 1fr, 1 1fr;
+    grid-template-areas: "c-foto c-titulo" "c-foto c-parrafo" "c-foto c-logos";
+    align-items: center;
+    justify-items: start;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .conocimientos h2 {
+    grid-area: c-titulo;
+  }
+}
+.conocimientos p {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .conocimientos p {
+    display: block;
+    margin: 10px 0px;
+    grid-area: c-parrafo;
+    text-align: start;
+  }
+}
+
+.conocimientos__logo--container {
+  max-width: 100vw;
+}
+.conocimientos__logo--container .conocimientos__logo {
+  display: flex;
+  align-items: center;
+  margin: 9px -11px 0px 3px;
+}
+.conocimientos__logo--container .conocimientos__logo .conocimientos__img {
+  width: 60px;
+}
+.conocimientos__logo--container .conocimientos__logo h3 {
+  font-size: 12px;
+  color: #fff;
+  margin: 0px 5px;
+}
+@media only screen and (min-width: 768px) {
+  .conocimientos__logo--container .conocimientos__logo h3 {
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .conocimientos__logo--container {
+    grid-area: c-logos;
+  }
+}
+
+.hero__ilustraciones {
+  margin-top: clamp(65px, 17vw, 130px);
+  background-image: url(../img/fondorosa.jpg);
+  background-size: cover;
+  max-width: 1240vw;
+}
+.hero__ilustraciones .hero__ilustraciones--titulo {
+  text-align: end;
+  font-size: clamp(40px, 12vw, 60px);
+  margin-right: 10px;
+}
+
+.carousel {
+  width: 90%;
+  max-width: 1240px;
+}
+.carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-position: 50%;
+  background-size: 100% 100%;
+  background-color: #262626;
+  border-radius: 50%;
+}
+
+.video__container {
+  width: 90vw;
+  max-width: 900px;
+  height: 51vw;
+  max-height: 509px;
 }
 
 /* Hero de la página principal*
@@ -1119,333 +1573,356 @@ h3{
 }
 
 
-/* Página de Mi historia*/
-.hero__historia {
-  margin-top: clamp(65px, 17vw, 130px);
-  background-image: url(../img/fondorosa.jpg);
-  background-size: cover;
-  max-width: 1240vw;
+/* Página de Mi historia*
+
+.hero__historia{
+    margin-top: clamp(65px, 17vw, 130px);
+    background-image: url(../img/fondorosa.jpg);
+    background-size: cover;
+    max-width: 1240vw;
 }
 
-.hero__historia--titulo {
-  text-align: end;
-  font-size: clamp(40px, 17vw, 60px);
-  margin-right: 10px;
+.hero__historia--titulo{
+    text-align: end;
+    font-size: clamp(40px, 17vw , 60px);
+    margin-right: 10px;
 }
 
-.sobreMi {
-  margin-top: 20px;
+.sobreMi{
+    margin-top: 20px;
 }
 
-.sobreMi__img {
-  width: min(80vw, 80vh);
-  grid-area: s-foto;
+.sobreMi__img{
+width: min(80vw, 80vh);
+grid-area: s-foto;
 }
 
-.trayectoria {
-  background-color: #f183c3;
+.trayectoria{
+    background-color: $color_primario;
 }
 
-.trayectoria h2 {
-  padding-top: 20px;
+.trayectoria h2{
+    padding-top: 20px;
 }
 
-.trayectoria__img {
-  width: min(80vw, 80vh);
+.trayectoria__img{
+    width: min(80vw, 80vh);
 }
 
-.conocimientos {
-  margin-bottom: 30px;
+.conocimientos{
+    margin-bottom: 30px;
 }
 
-.conocimientos__foto {
-  display: none;
+.conocimientos__foto{
+    display: none;
 }
 
-.conocimientos p {
-  display: none;
+.conocimientos p{
+    display: none;
 }
 
-.conocimientos__logo--container {
-  max-width: 100vw;
+.conocimientos__logo--container{
+    max-width: 100vw;
 }
 
-.conocimientos__logo h3 {
-  font-size: 12px;
-  color: #fff;
-  margin: 0px 5px;
+.conocimientos__logo h3{
+    font-size: 12px;
+    color: $blanco;
+    margin: 0px 5px;
 }
 
-.conocimientos__logo {
-  display: flex;
-  align-items: center;
-  margin: 9px -11px 0px 3px;
+.conocimientos__logo{
+    display: flex;
+    align-items: center;
+    margin: 9px -11px 0px 3px ;
 }
 
-.conocimientos__img {
-  width: 60px;
+.conocimientos__img{
+    width: 60px;
 }
 
-.video__container {
-  width: 250px;
+/* paginas ilustraciones, grafico y web*
+
+.video__container{
+    width: 250px;
 }
 
 @media only screen and (min-width: 416px) {
-  .premiere {
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-  }
-  .after {
-    -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s;
-  }
+    .premiere{
+        animation-delay: 0s;
+    }
+    .after{
+        animation-delay: 0.40s;
+    }
+
 }
+
 @media only screen and (min-width: 480px) {
-  .footer__container {
-    display: grid;
-    grid-template-columns: 2fr 2fr 3fr;
-    gap: 6px;
-    grid-template-areas: "foto pagina contacto";
-  }
-  .contacto__logos--container h3 {
-    font-size: 12px;
-    margin: 6%;
-  }
-  .footer__imgContainer {
-    justify-self: center;
-  }
+    .footer__container{
+        display: grid; 
+        grid-template-columns: 2fr 2fr 3fr ; 
+        gap: 6px; 
+        grid-template-areas: 
+            "foto pagina contacto";
+    }
+    .contacto__logos--container h3{
+        font-size: 12px;
+        margin: 6%;
+    }
+    .footer__imgContainer {
+        justify-self: center;
+    }
 }
+
+
 @media only screen and (min-width: 768px) {
-  p {
-    font-size: 15px;
-  }
-  .trabajos__ind {
-    width: 350px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .trabajos__ind p {
-    display: block;
-  }
-  .trabajos__ind h3 {
-    margin: 0%;
-  }
-  .habilidades__titulo {
-    font-size: 50px;
-  }
-  .footer__container a {
-    font-size: 15px;
-  }
-  .footer__contacto p {
-    font-size: 17px;
-  }
-  .h2, h2 {
-    font-size: 40px;
-  }
-  .conocimientos__logo h3 {
-    font-size: 19px;
-  }
-  .container p {
-    display: block;
-    margin: 10px 0px;
-    grid-area: c-parrafo;
-    text-align: start;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: 2 1fr, 1 1fr;
-    grid-template-areas: "c-foto c-titulo" "c-foto c-parrafo" "c-foto c-logos";
-    align-items: center;
-    justify-items: start;
-  }
-  .conocimientos__titulo {
-    grid-area: c-titulo;
-  }
-  .conocimientos__foto {
-    display: block;
-    grid-area: c-foto;
-  }
-  .conocimientos__logo--container {
-    grid-area: c-logos;
-  }
-  .contacto__section {
-    background: rgb(38, 38, 38);
-    background: linear-gradient(180deg, rgba(38, 38, 38, 0) 34%, rgb(241, 131, 195) 34%, rgb(241, 131, 195) 100%);
-  }
-  .contacto__logos--container h3 {
-    font-size: 15px;
-  }
+    p{
+        font-size: 15px;
+    }
+    .trabajos__ind{
+        width: 350px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .trabajos__ind p{
+        display: block;
+    }
+
+    .trabajos__ind h3{
+        margin: 0%;
+    }
+    .habilidades__titulo {
+        font-size: 50px;
+    }
+    .footer__container a {
+        font-size: 15px;
+    }
+    .footer__contacto p {
+        font-size: 17px;
+    }
+    .h2, h2 {
+        font-size: 40px;
+    }
+    .conocimientos__logo h3 {
+        font-size: 19px;
+    }
+    .container p{
+        display: block;
+        margin: 10px 0px;
+        grid-area: c-parrafo;
+        text-align: start;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 2 1fr, 1 1fr;
+        grid-template-areas: 
+        "c-foto c-titulo"
+        "c-foto c-parrafo"
+        "c-foto c-logos";
+        align-items: center;
+        justify-items: start;
+    }
+    .conocimientos__titulo{
+        grid-area: c-titulo;
+    }
+    .conocimientos__foto{
+        display: block;
+        grid-area: c-foto;
+    }
+    .conocimientos__logo--container{
+        grid-area: c-logos;
+    }
+    .contacto__section{
+        background: rgb(38,38,38);
+        background: linear-gradient(180deg, rgba(38,38,38,0) 34%, rgba(241,131,195,1) 34%, rgba(241,131,195,1) 100%);
+    }
+    .contacto__logos--container h3{
+        font-size: 15px;
+    }
 }
+
 @media only screen and (min-width: 992px) {
-  .navbar-dark .navbar-nav .nav-link {
-    font-size: clamp(10px, 4px + 1vw, 20px);
-  }
-  .hero-banner {
-    max-width: 1024px;
-  }
-  .titulo-hero {
-    font-size: clamp(5vw, 10vh, 70px);
-  }
-  .navbar-collapse {
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  }
-  .boton-hero a {
-    font-size: clamp(2vw, 3vh, 40px);
-  }
-  .boton-hero a:hover {
-    color: #fff;
-    background-color: #262626;
-    font-size: clamp(2vw, 3vh, 40px);
-  }
-  .conoceme {
-    display: grid;
-    justify-items: flex-start;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "foto titulo" "foto titulo" "foto parrafo" "foto parrafo" "foto boton";
-  }
-  .conoceme h1 {
-    text-align: start;
-  }
-  .conoceme__foto-container {
-    width: min(67vw, 50vh);
-  }
-  .conoceme p {
-    text-align: start;
-    font-size: 18px;
-  }
-  .boton-conoceme {
-    margin: 0;
-  }
-  .trabajos {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-  }
-  .trabajos__ind {
-    width: 300px;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .sobreMi {
-    display: grid;
-    align-items: center;
-    justify-items: start;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "s-foto s-titulo" "s-foto s-parrafo";
-    gap: 5px;
-  }
-  .sobreMi__img {
-    width: 350px;
-  }
-  .sobreMi h2 {
-    grid-area: s-titulo;
-    align-self: flex-end;
-  }
-  .sobreMi p {
-    text-align: start;
-    grid-area: s-parrafo;
-    padding: 0;
-    align-self: flex-start;
-  }
-  .trayectoria {
-    display: grid;
-    align-items: center;
-    justify-items: start;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "t-titulo t-foto" "t-parrafo t-foto";
-    gap: 5px;
-  }
-  .trayectoria {
-    margin-top: 30px;
-    background: linear-gradient(135deg, rgb(241, 131, 195) 0%, rgb(241, 131, 195) 63%, rgb(38, 38, 38) 63%, rgb(38, 38, 38) 100%);
-  }
-  .trayectoria h2 {
-    grid-area: t-titulo;
-    align-self: flex-end;
-    justify-self: flex-end;
-  }
-  .trayectoria__img {
-    width: 350px;
-    grid-area: t-foto;
-  }
-  .trayectoria p {
-    grid-area: t-parrafo;
-    text-align: start;
-    align-self: flex-start;
-  }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: clamp(10px, 4px + 1vw, 20px);
+    }
+    .hero-banner {
+        max-width: 1024px;
+    }
+    .titulo-hero {
+        font-size: clamp(5vw, 10vh , 70px);
+    }
+    .navbar-collapse {
+        box-shadow: 0px 0px 0px #00000000;
+    }
+    .boton-hero a {
+        font-size: clamp(2vw, 3vh , 40px);
+    }    
+    .boton-hero a:hover {
+        color: $blanco;
+        background-color: $color_secundario;
+        font-size: clamp(2vw, 3vh , 40px);
+    }
+    .conoceme{
+        display: grid;
+        justify-items: flex-start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "foto titulo"
+        "foto titulo"
+        "foto parrafo"
+        "foto parrafo"
+        "foto boton";
+    }
+    .conoceme h1 {
+        text-align: start;
+    }
+    .conoceme__foto-container {
+        width: min(67vw, 50vh);
+    }
+    .conoceme p {
+        text-align: start;
+        font-size: 18px;
+    }
+    .boton-conoceme {
+        margin: 0;
+    }
+    .trabajos {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .trabajos__ind {
+        width: 300px;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .sobreMi{
+        display: grid;
+        align-items: center;
+        justify-items: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "s-foto s-titulo"
+        "s-foto s-parrafo";
+        gap: 5px;
+    }
+    .sobreMi__img{
+        width: 350px;
+    }
+    .sobreMi h2{
+        grid-area: s-titulo;
+        align-self: flex-end;
+    }
+    .sobreMi p{
+        text-align: start;
+        grid-area: s-parrafo;
+        padding: 0;
+        align-self: flex-start;
+    }
+    .trayectoria{
+        display: grid;
+        align-items: center;
+        justify-items: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "t-titulo t-foto"
+        "t-parrafo t-foto";
+        gap: 5px;
+    }
+    .trayectoria {
+        margin-top: 30px;
+        background: linear-gradient(135deg, rgba(241,131,195,1) 0%, rgba(241,131,195,1) 63%, rgba(38,38,38,1) 63%, rgba(38,38,38,1) 100%);
+    }
+    .trayectoria h2 {
+        grid-area: t-titulo;
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+    .trayectoria__img{
+        width: 350px;
+        grid-area: t-foto;
+    }
+    .trayectoria p{
+        grid-area: t-parrafo;
+        text-align: start;
+        align-self: flex-start;
+    }
 }
-@media only screen and (min-width: 1024px) {
-  .conoceme {
-    max-width: 1240px;
-  }
-  .conoceme h1 {
-    align-self: flex-end;
-  }
-  .conoceme p {
-    align-self: center;
-  }
-  .conoceme__foto-container {
-    width: 550px;
-  }
-  .boton-conoceme {
-    align-self: flex-start;
-  }
-  .trabajos {
-    max-width: 1240px;
-    gap: 100px;
-  }
-  .proyectos__imgcont {
-    grid-template-columns: 6 1fr;
-    grid-template-areas: "kuki kuki timestop timestop interwarp conan" "kuki kuki picky gilipollas bedel bedel";
-    gap: 3px;
-  }
-  .proyectos__imgcont img {
-    width: auto;
-  }
-  .habilidades__logos {
-    max-width: 1240px;
-  }
-  .photoshop {
-    -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-  }
-  .premiere {
-    -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s;
-  }
-  .after {
-    -webkit-animation-delay: 0.6s;
-            animation-delay: 0.6s;
-  }
-  .corel {
-    -webkit-animation-delay: 0.8s;
-            animation-delay: 0.8s;
-  }
-  .wordpress {
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  .sobreMi {
-    max-width: 1240px;
-  }
-  .hero__historia--banner {
-    max-width: 1240px;
-  }
-  .sobreMi__img {
-    width: 550px;
-  }
-  .footer__container {
-    max-width: 1240px;
-  }
-  .trayectoria {
-    max-width: 1240px;
-  }
-  .hero__contacto--banner {
-    max-width: 1240px;
-  }
-}/*# sourceMappingURL=style.css.map */
+
+    @media only screen and (min-width: 1024px) {
+    .conoceme{
+        max-width: 1240px;
+    }
+    .conoceme h1{
+        align-self: flex-end;
+    }
+    .conoceme p{
+        align-self: center;
+    }
+    .conoceme__foto-container{
+        width: 550px;
+    }
+    .boton-conoceme{
+        align-self: flex-start ;
+    }
+    .trabajos{
+        max-width: 1240px;
+        gap: 100px;
+    }
+    .proyectos__imgcont{
+        grid-template-columns: 6 1fr;
+        grid-template-areas: 
+        "kuki kuki timestop timestop interwarp conan"
+        "kuki kuki picky gilipollas bedel bedel";
+        gap: 3px;
+    }
+    .proyectos__imgcont img{
+        width: auto;
+    }
+    .habilidades__logos{
+        max-width: 1240px;
+    }
+    .photoshop{
+        animation-delay: 0.20s;
+    }
+
+    .premiere{
+        animation-delay: 0.40s;
+    }
+
+    .after{
+        animation-delay: 0.60s;
+    }
+
+    .corel{
+        animation-delay: 0.80s;
+    }
+
+    .wordpress{
+        animation-delay: 1s;
+    }
+    .sobreMi{
+        max-width: 1240px;
+    }
+    .hero__historia--banner{
+        max-width: 1240px;
+    }
+    .sobreMi__img{
+        width: 550px;
+    }
+    .footer__container{
+        max-width: 1240px;
+    }
+    .trayectoria{
+        max-width: 1240px;
+    }
+    .hero__contacto--banner{
+        max-width: 1240px;
+    }
+}*//*# sourceMappingURL=style.css.map */

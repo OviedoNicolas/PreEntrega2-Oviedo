@@ -12,11 +12,16 @@
         width: 80vw;
         font-weight: 900;
         padding-top: 50px;
+
+        @media only screen and (min-width: 768px) {
+                font-size: 50px;
+            }
     }
 
     .habilidades__logos{
         width: 70%;
         padding-top: 20px;
+        max-width: 1240px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -54,6 +59,10 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
+
+    @media only screen and (min-width: 1024px) {
+        animation-delay: 0.20s;
+    }
 }
 
 .premiere{
@@ -63,6 +72,13 @@
     animation-direction: alternate;
     animation-delay: 0.20s;
     animation-timing-function: ease-in-out;
+
+    @media only screen and (min-width: 416px) {
+        animation-delay: 0s;
+    }
+    @media only screen and (min-width: 1024px) {
+        animation-delay: 0.40s;
+    }
 }
 
 .after{
@@ -72,6 +88,16 @@
     animation-direction: alternate;
     animation-delay: 0.20s;
     animation-timing-function: ease-in-out;
+
+    @media only screen and (min-width: 416px) {
+        animation-delay: 0.40s;
+    }
+    @media only screen and (min-width: 789px) {
+        animation-delay: 0s;
+    }
+    @media only screen and (min-width: 1024px) {  
+        animation-delay: 0.60s;
+    }
 }
 
 .corel{
@@ -81,6 +107,13 @@
     animation-direction: alternate;
     animation-delay: 0.40s;
     animation-timing-function: ease-in-out;
+
+    @media only screen and (min-width: 986px) {
+        animation-delay: 0s;
+    }
+    @media only screen and (min-width: 1024px) {  
+        animation-delay: 0.80s;
+    }
 }
 
 .wordpress{
@@ -88,6 +121,10 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-delay: 0.4s;
+    animation-delay: 0.40s;
     animation-timing-function: ease-in-out;
+
+    @media only screen and (min-width: 1024px) {  
+        animation-delay: 1s;
+    }
 }

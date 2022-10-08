@@ -3,13 +3,14 @@
 @import "generales";
 @import "header";
 @import "herop";
-@import "historiap";
+@import "historiaindex";
 @import "trabajos";
 @import "proyectos";
 @import "habilidades";
 @import "footer";
 @import "contacto";
-
+@import "historiapage";
+@import "ilustraciones";
 
 /* Hero de la página principal*
 .hero-container{
@@ -515,7 +516,7 @@ h3{
 }
 
 
-/* Página de Mi historia*/
+/* Página de Mi historia*
 
 .hero__historia{
     margin-top: clamp(65px, 17vw, 130px);
@@ -582,6 +583,8 @@ grid-area: s-foto;
 .conocimientos__img{
     width: 60px;
 }
+
+/* paginas ilustraciones, grafico y web*
 
 .video__container{
     width: 250px;
@@ -865,4 +868,4 @@ grid-area: s-foto;
     .hero__contacto--banner{
         max-width: 1240px;
     }
-}
+}*/

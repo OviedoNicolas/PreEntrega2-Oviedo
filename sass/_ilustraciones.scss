@@ -1,0 +1,34 @@
+.hero__ilustraciones{
+    margin-top: clamp(65px, 17vw, 130px);
+    background-image: url(../img/fondorosa.jpg);
+    background-size: cover;
+    max-width: 1240vw;
+
+    .hero__ilustraciones--titulo{
+        text-align: end;
+        font-size: clamp(40px, 12vw , 60px);
+        margin-right: 10px;
+    }
+}
+
+.carousel {
+    width: 90%;
+    max-width: 1240px;
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        background-position: 50%;
+        background-size: 100% 100%;
+        background-color: #262626;
+        border-radius: 50%;
+    }
+}
+
+.video__container {
+    width: 90vw;
+    max-width: 900px;
+    height: 51vw;
+    max-height: 509px;
+}

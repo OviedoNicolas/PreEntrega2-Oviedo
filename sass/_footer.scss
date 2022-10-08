@@ -1,4 +1,5 @@
 .footer__container{
+    max-width: 1240px;
     display: grid; 
     grid-template-columns: 0.6fr 1.2fr; 
     gap: 6px; 
@@ -11,6 +12,13 @@
         grid-area: foto;
         width: 100px;
         justify-self: end ;
+
+        @media only screen and (min-width: 480px) {
+            justify-self: center;
+        }
+        @media only screen and (min-width: 992px) {
+            width: 150px;
+        }
     }
 
     .footer__paginas{
@@ -31,6 +39,10 @@
             margin-bottom: 6px;
             text-align: start;
             padding: 0;
+
+            @media only screen and (min-width: 768px) {
+                    font-size: 17px;
+                }
         }
     }
 
@@ -40,5 +52,17 @@
 
     a{
         font-size: 10px;
+
+        @media only screen and (min-width: 768px) {
+                font-size: 15px;
+            }
     }
+
+    @media only screen and (min-width: 480px) {
+            display: grid; 
+            grid-template-columns: 2fr 2fr 3fr ; 
+            gap: 6px; 
+            grid-template-areas: 
+                "foto pagina contacto";
+        }
 }

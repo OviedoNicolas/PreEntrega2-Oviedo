@@ -35,11 +35,19 @@ header{
     margin: 8px -12px;
     padding-left: 12px;
     box-shadow: 0px 2px 10px #121212;
+
+    @media only screen and (min-width: 992px) {
+            box-shadow: 0px 0px 0px #00000000;
+        }
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: $blanco;
     font-size: clamp(10px, 10px + 1vw, 20px);
+
+    @media only screen and (min-width: 992px) {
+            font-size: clamp(10px, 4px + 1vw, 20px);
+        }
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {

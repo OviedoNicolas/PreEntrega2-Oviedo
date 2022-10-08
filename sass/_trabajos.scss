@@ -3,9 +3,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(45deg, rgba(241,131,195,1) 0%, rgba(241,131,195,1) 25%, rgba(9,9,121,0) 25%, rgba(230,125,192,0) 75%, rgba(241,131,195,1) 75%, rgba(241,131,195,1) 100%);
+
 
     h2{
-        color: $color_primario;
+        color: $blanco;
         font-size: clamp(41px, 15vw , 60px);
         text-align: center;
         font-weight: 900;
@@ -16,6 +18,15 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+
+        @media only screen and (min-width: 992px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            max-width: 1240px;
+            width: 60%;
+            flex-wrap: wrap;
+        }
 
         article{
             margin: 50px 0px;
@@ -33,10 +44,36 @@
                 width: 130px;
                 margin-top: -85px;
             }
+
+            @media only screen and (min-width: 768px) {
+                width: 350px;
+                height: 450px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                    h3{
+                        margin: 0%;
+                    }
+            }
+
+            @media only screen and (min-width: 992px) {
+                width: 300px;
+                height: 450px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
         }
+        
 
         p{
             display: none;
+
+            @media only screen and (min-width: 768px) {
+                    display: block;
+                }
         }
 
         .trabajos__boton-container{

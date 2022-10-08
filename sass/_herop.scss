@@ -12,21 +12,29 @@
     .hero-banner{
         display: flex;
         width: 100%;
+        max-width: 1024px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
 
-        p{
+        .titulo{
             font-size: clamp(5vw, 6vh , 60px);
             font-family: 'Montserrat', sans-serif;
             text-align: center;
             font-weight: 100;
             width: 100%;
 
-            span{
-                font-weight: 900;
-                width: 100%;
-            }            
+            @media only screen and (min-width: 992px) {
+                    font-size: clamp(5vw, 10vh , 70px);
+                }
+        }
+
+        .subtitulo{
+            font-size: clamp(5vw, 6vh , 60px);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            width: 100%;
+            margin-top: -50px;
         }
 
         div{
@@ -40,6 +48,14 @@
 
             a{
                 font-size:clamp(3vw, 3vh , 60px);
+
+                @media only screen and (min-width: 992px) {
+                        font-size: clamp(2vw, 3vh , 40px);
+                    }
+            }
+            a:hover {
+                color: $blanco;
+                background-color: $color_secundario;
             }
         }
     }
