@@ -54,11 +54,11 @@
         font-size: 10px;
 
         @media only screen and (min-width: 768px) {
-                font-size: 15px;
-            }
+            font-size: 15px;
+        }
     }
 
-    @media only screen and (min-width: 480px) {
+        @media only screen and (min-width: 480px) {
             display: grid; 
             grid-template-columns: 2fr 2fr 3fr ; 
             gap: 6px; 

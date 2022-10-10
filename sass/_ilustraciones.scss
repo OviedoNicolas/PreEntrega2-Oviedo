@@ -26,9 +26,27 @@
     }
 }
 
+.trabajos_ilustraciones{
+    margin-top: 40px;
+}
+
+.ilustraciones__video{
+    margin-top: 40px;
+    background-color: $color_primario;
+    padding: 20px 0px;
+}
+
 .video__container {
     width: 90vw;
     max-width: 900px;
     height: 51vw;
     max-height: 509px;
+}
+
+.ilustraciones__logo--container{
+    margin-top: -70px;
+    margin-bottom: 10px;
+    width: 100vw;
+    max-width: 1240px;
+    display: flex;
 }
