@@ -1149,6 +1149,10 @@ nav li {
   background-color: #fff;
 }
 
+.ilustraciones__empresas h3 {
+  font-size: 30px;
+}
+
 .ilustraciones__logo--container {
   margin-bottom: 10px;
   width: 100vw;
@@ -1246,6 +1250,10 @@ nav li {
 .grafico__empresas {
   margin-top: 40px;
   background-color: #fff;
+}
+
+.grafico__empresas h3 {
+  font-size: 30px;
 }
 
 .grafico__logo--container {
@@ -1350,6 +1358,10 @@ nav li {
 .web__empresas {
   margin-top: 40px;
   background-color: #fff;
+}
+
+.web__empresas h3 {
+  font-size: 30px;
 }
 
 .web__logo--container {
