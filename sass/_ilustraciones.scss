@@ -11,21 +11,6 @@
     }
 }
 
-.carousel {
-    width: 90%;
-    max-width: 1240px;
-
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-        display: inline-block;
-        width: 2rem;
-        height: 2rem;
-        background-position: 50%;
-        background-size: 100% 100%;
-        background-color: #262626;
-        border-radius: 50%;
-    }
-}
-
 .trabajos_ilustraciones{
     margin-top: 40px;
 }
@@ -34,17 +19,77 @@
     margin-top: 40px;
     background-color: $color_primario;
     padding: 20px 0px;
+
+    @media only screen and (min-width: 992px) {
+        background: linear-gradient(90deg, rgba(241,131,195,1) 0%, rgba(241,131,195,1) 60%, rgba(45,45,45,1) 60%, rgba(45,45,45,1) 99%);
+        }
+}
+
+.ilustraciones__video h2{
+    grid-area: titulo ;
+
+    @media only screen and (min-width: 992px) {
+        align-self: flex-end;
+        text-align: start;
+        margin-left: 138px;
+        }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 45px ;
+        margin-left: 50px;
+        }
+}
+
+.ilustraciones__video p{
+    grid-area: parrafo ;
+
+    @media only screen and (min-width: 992px) {
+        align-self: flex-start ;
+        text-align: start;
+        margin-left: 138px;
+        }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 24px;
+        margin-left: 40px;
+        }
+}
+
+.ilustraciones__video article{
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo"
+                        "parrafo"
+                        "video";
+
+    @media only screen and (min-width: 992px) {
+        height: 400px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "titulo video video"
+                            "parrafo video video";
+        }
 }
 
 .video__container {
     width: 90vw;
-    max-width: 900px;
+    max-width: 620px;
     height: 51vw;
-    max-height: 509px;
+    max-height: 350px;
+    box-shadow: -10px 10px 10px #262626a8 ;
+    grid-area: video;
+
+    @media only screen and (min-width: 992px) {
+            align-self: flex-start;
+        }
+}
+
+.ilustraciones__empresas{
+    margin-top: 40px;
+    background-color: $blanco;
 }
 
 .ilustraciones__logo--container{
-    margin-top: -70px;
     margin-bottom: 10px;
     width: 100vw;
     max-width: 1240px;
