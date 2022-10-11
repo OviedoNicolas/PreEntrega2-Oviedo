@@ -47,10 +47,14 @@
             align-self: flex-end;
         }
         p{
-            text-align: start;
+            text-align: center;
             grid-area: s-parrafo;
             padding: 0;
             align-self: flex-start;
+            
+            @media only screen and (min-width: 992px) {
+                text-align: start;
+            }
         }
 }
 
