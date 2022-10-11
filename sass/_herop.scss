@@ -11,8 +11,7 @@
 
     .hero-banner{
         display: flex;
-        width: 100%;
-        max-width: 1024px;
+        @include ancho (100%, 1240px);
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;

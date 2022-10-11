@@ -75,10 +75,8 @@
 }
 
 .video__container {
-    width: 90vw;
-    max-width: 620px;
-    height: 51vw;
-    max-height: 350px;
+    @include ancho (90vw, 620px);
+    @include alto (51vw, 350px);
     box-shadow: -10px 10px 10px #262626a8 ;
     grid-area: video;
 
@@ -95,11 +93,10 @@
 
 .ilustraciones__empresas h3{
     font-size: 30px;
+    padding-top: 30px;
 }
 
 .ilustraciones__logo--container{
     margin-bottom: 10px;
-    width: 100vw;
-    max-width: 1240px;
-    display: flex;
+    @include ancho (100vw, 1240px);
 }

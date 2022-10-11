@@ -1,6 +1,5 @@
 .carousel {
-    width: 90%;
-    max-width: 1240px;
+    @include ancho (90%, 1240px);
 
     .carousel-indicators [data-bs-target] {
         background-color: $color_primario;

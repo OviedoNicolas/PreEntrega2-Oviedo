@@ -1,0 +1,9 @@
+@mixin ancho ($width, $max-width) {
+    width: $width;
+    max-width: $max-width;
+}
+
+@mixin alto ($height, $max-height) {
+    height: $height;
+    max-height: $max-height; 
+}

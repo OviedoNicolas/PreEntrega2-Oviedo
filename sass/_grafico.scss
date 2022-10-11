@@ -1,16 +1,12 @@
 .hero__grafico{
-    margin-top: clamp(65px, 17vw, 130px);
-    background-image: url(../img/fondorosa.jpg);
-    background-size: cover;
+    @extend .hero__ilustraciones;
 
     div{
         max-width: 1024px;
     }
 
     .hero__grafico--titulo{
-        text-align: end;
-        font-size: clamp(40px, 12vw , 60px);
-        margin-right: 10px;
+        @extend .hero__ilustraciones--titulo;
     }
 }
 
@@ -71,12 +67,7 @@
 }
 
 .video__container {
-    width: 90vw;
-    max-width: 620px;
-    height: 51vw;
-    max-height: 350px;
-    box-shadow: -10px 10px 10px #262626a8 ;
-    grid-area: video;
+    @extend .video__container;
 
     @media only screen and (min-width: 992px) {
             align-self: center;
@@ -90,11 +81,9 @@
 
 .grafico__empresas h3{
     font-size: 30px;
+    padding-top: 30px;
 }
 
 .grafico__logo--container{
-    margin-bottom: 10px;
-    width: 100vw;
-    max-width: 1240px;
-    display: flex;
+    @extend .ilustraciones__logo--container;
 }
