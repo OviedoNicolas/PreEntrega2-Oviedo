@@ -177,7 +177,7 @@ nav li {
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-image: url(../img/fondorosa.jpg);
+  background-image: url(../img/fondorosa.webp);
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
@@ -474,7 +474,7 @@ nav li {
 .habilidades {
   margin-top: 50px;
   height: 470px;
-  background-image: url(../img/fondorosa.jpg);
+  background-image: url(../img/fondorosa.webp);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -733,7 +733,7 @@ nav li {
 
 .hero__contacto {
   margin-top: clamp(65px, 17vw, 130px);
-  background-image: url(../img/fondorosa.jpg);
+  background-image: url(../img/fondorosa.webp);
   background-size: cover;
 }
 .hero__contacto div {
@@ -751,7 +751,7 @@ nav li {
   width: 100%;
   max-width: 1240px;
   margin-top: 20px;
-  background-image: url(../img/OhCherry-Background.jpg);
+  background-image: url(../img/OhCherry-Background.webp);
   background-repeat: no-repeat;
   background-position: right center;
   gap: 50px;
@@ -861,7 +861,7 @@ nav li {
 
 .hero__historia {
   margin-top: clamp(65px, 17vw, 130px);
-  background-image: url(../img/fondorosa.jpg);
+  background-image: url(../img/fondorosa.webp);
   background-size: cover;
   max-width: 1240vw;
 }
@@ -1056,7 +1056,7 @@ nav li {
 
 .hero__ilustraciones, .hero__web, .hero__grafico {
   margin-top: clamp(65px, 17vw, 130px);
-  background-image: url(../img/fondorosa.jpg);
+  background-image: url(../img/fondorosa.webp);
   background-size: cover;
 }
 .hero__ilustraciones div, .hero__web div, .hero__grafico div {

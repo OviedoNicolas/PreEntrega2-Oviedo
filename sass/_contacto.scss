@@ -1,6 +1,6 @@
 .hero__contacto{
     margin-top: clamp(65px, 17vw, 130px);
-    background-image: url(../img/fondorosa.jpg);
+    background-image: url(../img/fondorosa.webp);
     background-size: cover;
 
     div{
@@ -19,7 +19,7 @@
     justify-content: center;
     @include ancho (100%, 1240px);
     margin-top: 20px;
-    background-image: url(../img/OhCherry-Background.jpg);
+    background-image: url(../img/OhCherry-Background.webp);
     background-repeat: no-repeat;
     background-position: right center;
     gap: 50px;
