@@ -8,7 +8,6 @@
 
     h2{
         color: $blanco;
-        font-size: clamp(41px, 15vw , 60px);
         text-align: center;
         font-weight: 900;
         margin-bottom: 50px;
@@ -69,6 +68,7 @@
 
         p{
             display: none;
+            font-size: 15px;
 
             @media only screen and (min-width: 768px) {
                     display: block;
@@ -81,7 +81,7 @@
 
         a{
             margin: 20px;
-            font-size: .9rem;
+            font-size: 0.9rem;
         }
     }
 }

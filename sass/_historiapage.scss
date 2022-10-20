@@ -2,17 +2,15 @@
     margin-top: clamp(65px, 17vw, 130px);
     background-image: url(../img/fondorosa.webp);
     background-size: cover;
-    max-width: 1240vw;
 
     .hero__historia--titulo{
         text-align: end;
-        font-size: clamp(40px, 12vw , 60px);
         margin-right: 10px;
     }
 }
 
 .hero__historia--banner{
-    max-width: 1240px;
+    max-width: 1024px;
 }
 
 .sobreMi{
@@ -21,15 +19,8 @@
     max-width: 1240px;
 
     div{
-        width: min(80vw, 80vh);
+        width: $responsive_size-img-grande;
         grid-area: s-foto;
-
-        @media only screen and (min-width: 992px) {
-                width: 350px;
-            }
-        @media only screen and (min-width: 1024px) {
-            width: 550px;
-        }
         }
 
         @media only screen and (min-width: 992px) {
@@ -86,10 +77,9 @@
         }
 
         div{
-            width: min(80vw, 80vh);
+            width: $responsive_size-img-chica;
 
             @media only screen and (min-width: 992px) {
-                width: 350px;
                 grid-area: t-foto;
             }
         }
@@ -135,7 +125,7 @@
         @media only screen and (min-width: 768px) {
                 display: block;
                 grid-area: c-foto;
-                width: 350px;
+                width: $responsive_size-img-chica;
                 margin-right: 40px;
             }
     }

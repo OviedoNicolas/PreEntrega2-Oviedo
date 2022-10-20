@@ -18,18 +18,7 @@
         grid-area: foto;
         justify-self: center;
         margin-top: 50px;
-        width: min(80vw, 80vh);
-
-        img{
-            width: 100%;
-        }
-
-        @media only screen and (min-width: 992px) {
-                width: min(67vw, 50vh);
-            }
-        @media only screen and (min-width: 1024px) {
-            width: 550px;
-        }
+        width: $responsive_size-img-grande;
     }
 
     h1{
@@ -43,13 +32,12 @@
 
     p{
         grid-area: parrafo;
-        max-width: 100vw;
+        max-width: 90%;
         text-align: center;
         padding: 15px 10px;
 
         @media only screen and (min-width: 992px) {
                 text-align: start;
-                font-size: 18px;
                 align-self: center;
             }
     }

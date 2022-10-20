@@ -5,17 +5,8 @@ $blanco: #fff;
 $negro: #000;
 
 $responsive_size-h1: clamp(40px, 8vw, 80px);
-$responsive_size-title: clamp(45px, 10vw, 100px);
-
-$responsive_size-b: clamp(12px, 10px + 1vw, 20px);
-
-$responsive_size-d: clamp(41px, 15vw , 60px);
-$responsive_size-e: clamp(41px, 15vw , 60px);
-$responsive_size-p: clamp(41px, 15vw , 60px);
-$responsive_size-p: clamp(41px, 15vw , 60px);
-$responsive_size-p: clamp(41px, 15vw , 60px);
-$responsive_size-p: clamp(41px, 15vw , 60px);
-$responsive_size-p: clamp(41px, 15vw , 60px);
-$responsive_size-p: clamp(41px, 15vw , 60px);
-$responsive_size-p: clamp(41px, 15vw , 60px);
-$responsive_size-p: clamp(41px, 15vw , 60px);
+$responsive_size-h2: clamp(30px, 6vw, 60px);
+$responsive_size-title: clamp(45px, 8vw, 100px);
+$responsive_size-p: clamp(14px, 1.6vw , 20px);
+$responsive_size-img-grande: clamp(256px, 50vw, 550px);
+$responsive_size-img-chica: clamp(256px, 30vw, 350px);

@@ -1,16 +1,12 @@
 .hero__contacto{
-    margin-top: clamp(65px, 17vw, 130px);
-    background-image: url(../img/fondorosa.webp);
-    background-size: cover;
+    @extend .hero__historia;
 
     div{
         max-width: 1024px;
     }
 
     h1{
-        text-align: end;
-        font-size: clamp(40px, 12vw , 60px);
-        margin-right: 10px;
+        @extend .hero__historia--titulo;
     }
 }
 

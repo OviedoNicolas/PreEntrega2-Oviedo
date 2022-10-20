@@ -7,20 +7,12 @@
     align-items: center;
 
     h2{
-        font-size: 40px;
-        text-align: center;
-        width: 80vw;
-        font-weight: 900;
         padding-top: 50px;
-
-        @media only screen and (min-width: 768px) {
-                font-size: 50px;
-            }
     }
 
     .habilidades__logos{
         width: 70%;
-        padding-top: 20px;
+        padding-top: 35px;
         max-width: 1240px;
         display: flex;
         flex-wrap: wrap;

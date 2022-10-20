@@ -1,12 +1,12 @@
 .hero__grafico{
-    @extend .hero__ilustraciones;
+    @extend .hero__historia;
 
     div{
         max-width: 1024px;
     }
 
     .hero__grafico--titulo{
-        @extend .hero__ilustraciones--titulo;
+        @extend .hero__historia--titulo;
     }
 }
 
