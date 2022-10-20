@@ -11,6 +11,34 @@ body {
   background-color: #262626;
 }
 
+h1 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: clamp(40px, 8vw, 80px);
+  text-align: center;
+}
+
+h2 {
+  font-weight: 900;
+  text-align: center;
+}
+
+h3 {
+  color: #f183c3;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+}
+
+h4 {
+  font-size: clamp(10px, 10px + 1vw, 20px);
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-text-decoration: underline #f183c3;
+          text-decoration: underline #f183c3;
+}
+
 p {
   font-family: "Barlow", sans-serif;
   font-size: 0.875rem;
@@ -30,7 +58,6 @@ a {
   font-size: 1.25rem;
   color: #fff;
 }
-
 a:hover {
   color: #f183c3;
 }
@@ -66,34 +93,6 @@ html {
 
 img {
   width: 100%;
-}
-
-h1 {
-  margin-top: 30px;
-  margin-bottom: 0;
-  font-weight: 900;
-  font-size: clamp(41px, 15vw, 60px);
-  text-align: center;
-}
-
-h2 {
-  font-weight: 900;
-  text-align: center;
-}
-
-h3 {
-  color: #f183c3;
-  font-size: 25px;
-  font-weight: 900;
-  text-align: center;
-}
-
-h4 {
-  font-size: clamp(10px, 10px + 1vw, 20px);
-  font-weight: 900;
-  text-transform: uppercase;
-  -webkit-text-decoration: underline #f183c3;
-          text-decoration: underline #f183c3;
 }
 
 header {
@@ -191,26 +190,18 @@ nav li {
   align-items: center;
 }
 .hero-container .hero-banner .titulo {
-  font-size: clamp(5vw, 6vh, 60px);
+  font-size: clamp(45px, 10vw, 100px);
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 100;
   width: 100%;
 }
-@media only screen and (min-width: 992px) {
-  .hero-container .hero-banner .titulo {
-    font-size: clamp(5vw, 10vh, 70px);
-  }
-}
 .hero-container .hero-banner .subtitulo {
-  font-size: clamp(5vw, 6vh, 60px);
+  font-size: clamp(45px, 10vw, 100px);
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   width: 100%;
   margin-top: -50px;
-}
-.hero-container .hero-banner div {
-  font-size: 0.9rem;
 }
 .hero-container .hero-banner div .boton {
   color: #f183c3;
@@ -877,6 +868,7 @@ nav li {
 
 .sobreMi {
   margin-top: 20px;
+  width: 90%;
   max-width: 1240px;
 }
 .sobreMi div {
@@ -899,7 +891,7 @@ nav li {
     align-items: center;
     justify-items: start;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "s-foto s-titulo" "s-foto s-parrafo";
+    grid-template-areas: "s-foto s-titulo" "s-foto s-pparrafo" "s-foto s-sparrafo";
     gap: 5px;
   }
 }
@@ -909,7 +901,6 @@ nav li {
 }
 .sobreMi p {
   text-align: center;
-  grid-area: s-parrafo;
   padding: 0;
   align-self: flex-start;
 }
@@ -917,6 +908,12 @@ nav li {
   .sobreMi p {
     text-align: start;
   }
+}
+.sobreMi .sobreMi--primerParrafo {
+  grid-area: s-pparrafo;
+}
+.sobreMi .sobreMi--segundoParrafo {
+  grid-area: s-sparrafo;
 }
 
 .trayectoria {
@@ -928,6 +925,7 @@ nav li {
   }
 }
 .trayectoria .trayectoria__container {
+  width: 90%;
   max-width: 1024px;
 }
 .trayectoria .trayectoria__container h2 {
@@ -955,17 +953,22 @@ nav li {
     align-items: center;
     justify-items: start;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "t-titulo t-foto" "t-parrafo t-foto";
+    grid-template-areas: "t-titulo t-foto" "t-pparrafo t-foto" "t-sparrafo t-foto";
     gap: 5px;
     margin-top: 30px;
   }
 }
 @media only screen and (min-width: 992px) {
   .trayectoria .trayectoria__container p {
-    grid-area: t-parrafo;
     text-align: start;
     align-self: flex-start;
   }
+}
+.trayectoria .trayectoria__container .trayectoria--primerParrafo {
+  grid-area: t-pparrafo;
+}
+.trayectoria .trayectoria__container .trayectoria--segundoParrafo {
+  grid-area: t-sparrafo;
 }
 
 .conocimientos {

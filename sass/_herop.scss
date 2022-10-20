@@ -17,19 +17,15 @@
         align-items: center;
 
         .titulo{
-            font-size: clamp(5vw, 6vh , 60px);
+            font-size: $responsive_size-title;
             font-family: 'Montserrat', sans-serif;
             text-align: center;
             font-weight: 100;
             width: 100%;
-
-            @media only screen and (min-width: 992px) {
-                    font-size: clamp(5vw, 10vh , 70px);
-                }
         }
 
         .subtitulo{
-            font-size: clamp(5vw, 6vh , 60px);
+            font-size: $responsive_size-title;
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
             width: 100%;
@@ -37,8 +33,6 @@
         }
 
         div{
-            font-size: .9rem;
-
             .boton{
                 color: $color_primario;
                 background-color: $blanco;

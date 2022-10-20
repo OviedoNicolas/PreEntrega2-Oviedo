@@ -17,6 +17,7 @@
 
 .sobreMi{
     margin-top: 20px;
+    width: 90%;
     max-width: 1240px;
 
     div{
@@ -38,7 +39,8 @@
             grid-template-columns: 1fr 1fr;
             grid-template-areas: 
             "s-foto s-titulo"
-            "s-foto s-parrafo";
+            "s-foto s-pparrafo"
+            "s-foto s-sparrafo";
             gap: 5px;
         }
 
@@ -47,14 +49,19 @@
             align-self: flex-end;
         }
         p{
-            text-align: center;
-            grid-area: s-parrafo;
+            text-align: center;            
             padding: 0;
             align-self: flex-start;
             
             @media only screen and (min-width: 992px) {
                 text-align: start;
             }
+        }
+        .sobreMi--primerParrafo{
+            grid-area: s-pparrafo;
+        }
+        .sobreMi--segundoParrafo{
+            grid-area: s-sparrafo;
         }
 }
 
@@ -65,8 +72,8 @@
         background: linear-gradient(135deg, rgba(241,131,195,1) 0%, rgba(241,131,195,1) 63%, rgba(38,38,38,1) 63%, rgba(38,38,38,1) 100%);
     }
 
-
     .trayectoria__container{
+        width: 90%;
         max-width: 1024px;
 
         h2{
@@ -94,17 +101,25 @@
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: 
                 "t-titulo t-foto"
-                "t-parrafo t-foto";
+                "t-pparrafo t-foto"
+                "t-sparrafo t-foto";
                 gap: 5px;
                 margin-top: 30px;
             }
 
         @media only screen and (min-width: 992px) {
             p{
-                grid-area: t-parrafo;
                 text-align: start;
                 align-self: flex-start;
             }
+        }
+
+        .trayectoria--primerParrafo{
+            grid-area: t-pparrafo;
+        }
+        
+        .trayectoria--segundoParrafo{
+            grid-area: t-sparrafo;
         }
     }
 }
