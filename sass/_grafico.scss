@@ -26,6 +26,7 @@
 
 .grafico__video h2{
     grid-area: titulo ;
+    font-size: $responsive_size-m;
 
     @media only screen and (min-width: 992px) {
         align-self: flex-end;
@@ -75,12 +76,11 @@
 }
 
 .grafico__empresas{
-    margin-top: 40px;
-    background-color: $blanco;
+    @extend .ilustraciones__empresas;
 }
 
 .grafico__empresas h3{
-    font-size: 30px;
+    font-size: $responsive_size-l;
     padding-top: 30px;
 }
 

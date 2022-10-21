@@ -10,29 +10,34 @@ body{
     background-color: $color_secundario;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: clamp(65px, 20vw, 130px);
+}
+
 h1{
     margin-top: 30px;
     margin-bottom: 0;
     font-weight: 900;
-    font-size: $responsive_size-h1;
+    font-size: $responsive_size-xl;
     text-align: center;
 }
 
 h2{
-    font-size: $responsive_size-h2;
+    font-size: $responsive_size-l;
     font-weight: 900;
     text-align: center;
 }
 
 h3{
     color: $color_primario;
-    font-size: 25px;
+    font-size: $responsive_size-s;
     font-weight: 900;
     text-align: center;
 }
 
 h4{
-    font-size: clamp(10px, 10px + 1vw, 20px);
+    font-size: $responsive_size-xs;
     font-weight: 900;
     text-transform: uppercase;
     text-decoration: underline $color_primario; 
@@ -57,20 +62,19 @@ a{
     }
 }
 
-
 .boton{
     color: $color_primario;
     border: 2px solid $color_primario;
     padding: 0.9375rem 1.5625rem;
     border-radius: 0.625rem;
     height: 6.25rem;
+    font-size: $responsive_size-p;
 
     &:hover{
         color: $blanco;
         background-color: $color_primario;
     }
 }
-
 
 footer{
     background-color: $color_complementario;
@@ -81,11 +85,6 @@ li{
     text-decoration: none;
     list-style-type: none;
     font-weight: 900;
-}
-
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: clamp(65px, 20vw, 130px);
 }
 
 img{

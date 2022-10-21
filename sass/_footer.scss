@@ -10,52 +10,61 @@
 
     .footer__imgContainer{
         grid-area: foto;
-        width: 100px;
+        width: $responsive_size-img-s;
         justify-self: end ;
 
         @media only screen and (min-width: 480px) {
             justify-self: center;
-        }
-        @media only screen and (min-width: 992px) {
-            width: 150px;
         }
     }
 
     .footer__paginas{
         display: flex;
         flex-direction: column;
-        grid-area: pagina;
         margin-left: 15px;
+        grid-area: pagina;
     }
 
     .footer__contacto{
-        display: flex;
-        flex-direction: column;
+        @extend .footer__paginas;
         grid-area: contacto;
-        margin-left: 15px;
+
+
+        a{
+            text-transform: lowercase;
+            font-family: 'Barlow', sans-serif;
+        }
         
         p{
-            font-size: 12px;
+            font-size: $responsive_size-footer;
             margin-bottom: 6px;
             text-align: start;
             padding: 0;
-
-            @media only screen and (min-width: 768px) {
-                    font-size: 17px;
-                }
         }
     }
 
     ul{
         padding-left: 0;
+
+        .face{
+            .footer__logo{
+                width: clamp(8px, 1.6vw, 15px);
+            }
+        }
+
+        li{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+
+            div{
+                width: $responsive_size-logo;
+            }
+        }
     }
 
     a{
-        font-size: 10px;
-
-        @media only screen and (min-width: 768px) {
-            font-size: 15px;
-        }
+        font-size: $responsive_size-footer;
     }
 
         @media only screen and (min-width: 480px) {

@@ -11,6 +11,11 @@ body {
   background-color: #262626;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: clamp(65px, 20vw, 130px);
+}
+
 h1 {
   margin-top: 30px;
   margin-bottom: 0;
@@ -27,13 +32,13 @@ h2 {
 
 h3 {
   color: #f183c3;
-  font-size: 25px;
+  font-size: clamp(18px, 1.8vw, 25px);
   font-weight: 900;
   text-align: center;
 }
 
 h4 {
-  font-size: clamp(10px, 10px + 1vw, 20px);
+  font-size: clamp(16px, 10px + 1vw, 22px);
   font-weight: 900;
   text-transform: uppercase;
   -webkit-text-decoration: underline #f183c3;
@@ -64,6 +69,7 @@ a:hover {
   padding: 0.9375rem 1.5625rem;
   border-radius: 0.625rem;
   height: 6.25rem;
+  font-size: clamp(14px, 1.6vw, 20px);
 }
 .boton:hover {
   color: #fff;
@@ -79,11 +85,6 @@ li {
   text-decoration: none;
   list-style-type: none;
   font-weight: 900;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: clamp(65px, 20vw, 130px);
 }
 
 img {
@@ -255,7 +256,6 @@ nav li {
 }
 .conoceme .boton-conoceme a {
   grid-area: boton;
-  font-size: 0.9rem;
 }
 @media only screen and (min-width: 992px) {
   .conoceme .boton-conoceme {
@@ -356,7 +356,6 @@ nav li {
 }
 .trabajos-container .trabajos a {
   margin: 20px;
-  font-size: 0.9rem;
 }
 
 .proyectos__container {
@@ -634,7 +633,7 @@ nav li {
 }
 .footer__container .footer__imgContainer {
   grid-area: foto;
-  width: 100px;
+  width: clamp(100px, 20vw, 200px);
   justify-self: end;
 }
 @media only screen and (min-width: 480px) {
@@ -642,44 +641,41 @@ nav li {
     justify-self: center;
   }
 }
-@media only screen and (min-width: 992px) {
-  .footer__container .footer__imgContainer {
-    width: 150px;
-  }
-}
-.footer__container .footer__paginas {
+.footer__container .footer__paginas, .footer__container .footer__contacto {
   display: flex;
   flex-direction: column;
-  grid-area: pagina;
   margin-left: 15px;
+  grid-area: pagina;
 }
 .footer__container .footer__contacto {
-  display: flex;
-  flex-direction: column;
   grid-area: contacto;
-  margin-left: 15px;
+}
+.footer__container .footer__contacto a {
+  text-transform: lowercase;
+  font-family: "Barlow", sans-serif;
 }
 .footer__container .footer__contacto p {
-  font-size: 12px;
+  font-size: clamp(13px, 1.6vw, 18px);
   margin-bottom: 6px;
   text-align: start;
   padding: 0;
 }
-@media only screen and (min-width: 768px) {
-  .footer__container .footer__contacto p {
-    font-size: 17px;
-  }
-}
 .footer__container ul {
   padding-left: 0;
 }
-.footer__container a {
-  font-size: 10px;
+.footer__container ul .face .footer__logo {
+  width: clamp(8px, 1.6vw, 15px);
 }
-@media only screen and (min-width: 768px) {
-  .footer__container a {
-    font-size: 15px;
-  }
+.footer__container ul li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.footer__container ul li div {
+  width: clamp(15px, 1.6vw, 20px);
+}
+.footer__container a {
+  font-size: clamp(13px, 1.6vw, 18px);
 }
 @media only screen and (min-width: 480px) {
   .footer__container {
@@ -717,6 +713,9 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.contactform__container .contact-form h2 {
+  font-size: clamp(30px, 6vw, 50px);
 }
 
 .form-floating > .form-control {
@@ -775,20 +774,23 @@ nav li {
   flex-wrap: wrap;
   justify-content: center;
 }
-.contacto__section .contacto__logos--container h3 {
-  font-size: 10px;
+.contacto__section .contacto__logos--container a {
+  font-size: 12px;
   font-weight: 900;
   margin: 10%;
   color: #262626;
 }
-@media only screen and (min-width: 480px) {
-  .contacto__section .contacto__logos--container h3 {
-    font-size: 12px;
+.contacto__section .contacto__logos--container a:hover {
+  color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  .contacto__section .contacto__logos--container a {
+    font-size: 14px;
     margin: 6%;
   }
 }
-@media only screen and (min-width: 768px) {
-  .contacto__section .contacto__logos--container h3 {
+@media only screen and (min-width: 992px) {
+  .contacto__section .contacto__logos--container a {
     font-size: 15px;
   }
 }
@@ -808,7 +810,7 @@ nav li {
 }
 
 .hero__historia, .hero__web, .hero__grafico, .hero__ilustraciones, .hero__contacto {
-  margin-top: clamp(65px, 17vw, 130px);
+  margin-top: clamp(65px, 10vw, 130px);
   background-image: url(../img/fondorosa.webp);
   background-size: cover;
 }
@@ -856,6 +858,7 @@ nav li {
 }
 .sobreMi .sobreMi--primerParrafo {
   grid-area: s-pparrafo;
+  align-self: center;
 }
 .sobreMi .sobreMi--segundoParrafo {
   grid-area: s-sparrafo;
@@ -910,6 +913,7 @@ nav li {
 }
 .trayectoria .trayectoria__container .trayectoria--primerParrafo {
   grid-area: t-pparrafo;
+  align-self: center;
 }
 .trayectoria .trayectoria__container .trayectoria--segundoParrafo {
   grid-area: t-sparrafo;
@@ -923,7 +927,7 @@ nav li {
 .conocimientos .conocimientos__foto {
   display: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .conocimientos .conocimientos__foto {
     display: block;
     grid-area: c-foto;
@@ -969,14 +973,10 @@ nav li {
   width: 60px;
 }
 .conocimientos__logo--container .conocimientos__logo h3 {
-  font-size: 12px;
   color: #fff;
   margin: 0px 5px;
-}
-@media only screen and (min-width: 768px) {
-  .conocimientos__logo--container .conocimientos__logo h3 {
-    font-size: 19px;
-  }
+  text-align: start;
+  font-size: clamp(14px, 1.6vw, 20px);
 }
 @media only screen and (min-width: 768px) {
   .conocimientos__logo--container {
@@ -1021,6 +1021,7 @@ nav li {
 
 .ilustraciones__video h2, .web__video h2 {
   grid-area: titulo;
+  font-size: clamp(30px, 4vw, 45px);
 }
 @media only screen and (min-width: 992px) {
   .ilustraciones__video h2, .web__video h2 {
@@ -1082,19 +1083,20 @@ nav li {
   }
 }
 
-.ilustraciones__empresas {
+.ilustraciones__empresas, .web__empresas, .grafico__empresas {
   margin-top: 40px;
   background-color: #fff;
+  width: 100%;
 }
 
-.ilustraciones__empresas h3 {
-  font-size: 30px;
+.ilustraciones__empresas h3, .web__empresas h3, .grafico__empresas h3 {
+  font-size: clamp(30px, 6vw, 60px);
   padding-top: 30px;
 }
 
 .ilustraciones__logo--container, .web__logo--container, .grafico__logo--container {
   margin-bottom: 10px;
-  width: 100vw;
+  width: 100%;
   max-width: 1240px;
 }
 
@@ -1118,6 +1120,7 @@ nav li {
 
 .grafico__video h2 {
   grid-area: titulo;
+  font-size: clamp(30px, 4vw, 45px);
 }
 @media only screen and (min-width: 992px) {
   .grafico__video h2 {
@@ -1166,13 +1169,8 @@ nav li {
   }
 }
 
-.grafico__empresas {
-  margin-top: 40px;
-  background-color: #fff;
-}
-
 .grafico__empresas h3 {
-  font-size: 30px;
+  font-size: clamp(30px, 6vw, 60px);
   padding-top: 30px;
 }
 
@@ -1191,6 +1189,7 @@ nav li {
 
 .web__video h2 {
   grid-area: titulo;
+  font-size: clamp(30px, 4vw, 45px);
 }
 @media only screen and (min-width: 992px) {
   .web__video h2 {
@@ -1244,12 +1243,7 @@ nav li {
   }
 }
 
-.web__empresas {
-  margin-top: 40px;
-  background-color: #fff;
-}
-
 .web__empresas h3 {
-  font-size: 30px;
+  font-size: clamp(30px, 6vw, 60px);
   padding-top: 30px;
 }/*# sourceMappingURL=style.css.map */

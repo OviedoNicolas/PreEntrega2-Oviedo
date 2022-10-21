@@ -1,5 +1,5 @@
 .hero__historia{
-    margin-top: clamp(65px, 17vw, 130px);
+    margin-top: clamp(65px, 10vw, 130px);
     background-image: url(../img/fondorosa.webp);
     background-size: cover;
 
@@ -19,7 +19,7 @@
     max-width: 1240px;
 
     div{
-        width: $responsive_size-img-grande;
+        width: $responsive_size-img-l;
         grid-area: s-foto;
         }
 
@@ -50,6 +50,7 @@
         }
         .sobreMi--primerParrafo{
             grid-area: s-pparrafo;
+            align-self: center;
         }
         .sobreMi--segundoParrafo{
             grid-area: s-sparrafo;
@@ -77,7 +78,7 @@
         }
 
         div{
-            width: $responsive_size-img-chica;
+            width: $responsive_size-img-m;
 
             @media only screen and (min-width: 992px) {
                 grid-area: t-foto;
@@ -106,6 +107,7 @@
 
         .trayectoria--primerParrafo{
             grid-area: t-pparrafo;
+            align-self: center;
         }
         
         .trayectoria--segundoParrafo{
@@ -122,10 +124,10 @@
     .conocimientos__foto{
         display: none;
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 992px) {
                 display: block;
                 grid-area: c-foto;
-                width: $responsive_size-img-chica;
+                width: $responsive_size-img-m;
                 margin-right: 40px;
             }
     }
@@ -167,20 +169,17 @@
     .conocimientos__logo{
         display: flex;
         align-items: center;
-        margin: 9px -11px 0px 3px ;
+        margin: 9px -11px 0px 3px;
 
         .conocimientos__img{
             width: 60px;
         }
 
         h3{
-            font-size: 12px;
             color: $blanco;
             margin: 0px 5px;
-
-            @media only screen and (min-width: 768px) {
-                    font-size: 19px;
-                }
+            text-align: start;
+            font-size: $responsive_size-p;
         }
     }
 

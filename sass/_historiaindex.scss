@@ -18,7 +18,7 @@
         grid-area: foto;
         justify-self: center;
         margin-top: 50px;
-        width: $responsive_size-img-grande;
+        width: $responsive_size-img-l;
     }
 
     h1{
@@ -47,7 +47,6 @@
 
         a{
             grid-area: boton;
-            font-size: .9rem;
         }
 
         @media only screen and (min-width: 992px) {
