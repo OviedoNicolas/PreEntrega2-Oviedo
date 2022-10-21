@@ -170,6 +170,11 @@
         display: flex;
         align-items: center;
         margin: 9px -11px 0px 3px;
+        flex-direction: column;
+
+        @media only screen and (min-width: 509px) {
+            flex-direction: row;
+        }
 
         .conocimientos__img{
             width: 60px;
@@ -178,8 +183,12 @@
         h3{
             color: $blanco;
             margin: 0px 5px;
-            text-align: start;
-            font-size: $responsive_size-p;
+            text-align: center;
+            font-size: $responsive_size-footer;
+
+            @media only screen and (min-width: 509px) {
+                text-align: start;
+            }
         }
     }
 
