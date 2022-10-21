@@ -1,5 +1,5 @@
 .hero__historia{
-    margin-top: clamp(65px, 10vw, 130px);
+    margin-top: clamp(4.0625rem, 10vw, 8.125rem);
     background-image: url(../img/fondorosa.webp);
     background-size: cover;
 
@@ -14,7 +14,7 @@
 }
 
 .sobreMi{
-    margin-top: 20px;
+    margin-top: 1.25rem;
     width: 90%;
     max-width: 1240px;
 
@@ -32,7 +32,7 @@
             "s-foto s-titulo"
             "s-foto s-pparrafo"
             "s-foto s-sparrafo";
-            gap: 5px;
+            gap: 0.3125rem;
         }
 
         h2{
@@ -69,7 +69,7 @@
         max-width: 1024px;
 
         h2{
-            padding-top: 20px;
+            padding-top: 1.25rem;
             @media only screen and (min-width: 992px) {
                     grid-area: t-titulo;
                     align-self: flex-end;
@@ -95,7 +95,7 @@
                 "t-pparrafo t-foto"
                 "t-sparrafo t-foto";
                 gap: 5px;
-                margin-top: 30px;
+                margin-top: 1.875rem;
             }
 
         @media only screen and (min-width: 992px) {
@@ -117,8 +117,8 @@
 }
 
 .conocimientos{
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
     max-width: 1024px;
 
     .conocimientos__foto{
@@ -156,7 +156,7 @@
 
         @media only screen and (min-width: 768px) {
                 display: block;
-                margin: 10px 0px;
+                margin: 0.625rem 0px;
                 grid-area: c-parrafo;
                 text-align: start;
             }
@@ -169,7 +169,7 @@
     .conocimientos__logo{
         display: flex;
         align-items: center;
-        margin: 9px -11px 0px 3px;
+        margin: 0.5625rem -0.6875rem 0px 0.1875rem;
         flex-direction: column;
 
         @media only screen and (min-width: 509px) {
@@ -177,14 +177,15 @@
         }
 
         .conocimientos__img{
-            width: 60px;
+            width: 3.75rem;
+            margin-bottom: 0.625rem;
         }
 
         h3{
             color: $blanco;
-            margin: 0px 5px;
+            margin: 0px 0.3125rem;
             text-align: center;
-            font-size: $responsive_size-footer;
+            font-size: $responsive_size-paragraph-s;
 
             @media only screen and (min-width: 509px) {
                 text-align: start;

@@ -4,7 +4,7 @@ header{
     z-index: 10;
     top: 0;
     width: 100%;
-    height: clamp(65px, 10vw, 130px);
+    height: clamp(4.0625rem, 10vw, 8.125rem);
     box-shadow: 0px 2px 10px #121212;
 }
 
@@ -23,7 +23,7 @@ header{
     display: flex;
     align-items: center;
     height: 100%;
-    max-width: min(251px, 60%);
+    max-width: min(15.6875rem, 60%);
 }
 
 .navbar-toggler{
@@ -32,8 +32,8 @@ header{
 
 .navbar-collapse {
     background-color: $color_secundario;
-    margin: 8px -12px;
-    padding-left: 12px;
+    margin: 0.5rem -0.75rem;
+    padding-left: 0.75rem;
     box-shadow: 0px 2px 10px #121212;
 
     @media only screen and (min-width: 992px) {
@@ -43,10 +43,10 @@ header{
 
 .navbar-dark .navbar-nav .nav-link {
     color: $blanco;
-    font-size: clamp(10px, 10px + 1vw, 20px);
+    font-size: clamp(0.625rem, 10px + 1vw, 1.25rem);
 
     @media only screen and (min-width: 992px) {
-            font-size: clamp(10px, 4px + 1vw, 20px);
+            font-size: clamp(0.625rem, 4px + 1vw, 1.25rem);
         }
 }
 

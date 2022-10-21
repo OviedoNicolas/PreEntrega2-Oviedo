@@ -2,11 +2,11 @@
     max-width: 1240px;
     display: grid; 
     grid-template-columns: 0.6fr 1.2fr; 
-    gap: 6px; 
+    gap: 0.375rem; 
     grid-template-areas: 
         "foto pagina"
         "foto contacto";
-    padding-top: 30px;
+    padding-top: 1.875rem;
 
     .footer__imgContainer{
         grid-area: foto;
@@ -30,7 +30,7 @@
     .footer__paginas{
         display: flex;
         flex-direction: column;
-        margin-left: 15px;
+        margin-left: 0.9375rem;
         grid-area: pagina;
     }
 
@@ -45,8 +45,8 @@
         }
         
         p{
-            font-size: $responsive_size-footer;
-            margin-bottom: 6px;
+            font-size: $responsive_size-paragraph-s;
+            margin-bottom: 0.375rem;
             text-align: start;
             padding: 0;
         }
@@ -57,14 +57,14 @@
 
         .face{
             .footer__logo{
-                width: clamp(8px, 1.6vw, 15px);
+                width: clamp(0.5rem, 1.6vw, 0.9375rem);
             }
         }
 
         li{
             display: flex;
-            gap: 10px;
-            margin-bottom: 10px;
+            gap: 0.625rem;
+            margin-bottom: 0.625rem;
 
             div{
                 width: $responsive_size-logo;
@@ -73,13 +73,13 @@
     }
 
     a{
-        font-size: $responsive_size-footer;
+        font-size: $responsive_size-paragraph-s;
     }
 
         @media only screen and (min-width: 480px) {
             display: grid; 
             grid-template-columns: 2fr 2fr 3fr ; 
-            gap: 6px; 
+            gap: 0.375rem; 
             grid-template-areas: 
                 "foto pagina contacto";
         }

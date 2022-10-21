@@ -17,29 +17,29 @@ html {
 }
 
 h1 {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   margin-bottom: 0;
   font-weight: 900;
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(2.5rem, 8vw, 5rem);
   text-align: center;
 }
 
 h2 {
-  font-size: clamp(30px, 6vw, 60px);
+  font-size: clamp(1.875rem, 6vw, 3.75rem);
   font-weight: 900;
   text-align: center;
 }
 
 h3 {
   color: #f183c3;
-  font-size: clamp(18px, 1.8vw, 25px);
+  font-size: clamp(1.125rem, 1.8vw, 1.5625rem);
   font-weight: 900;
   text-align: center;
 }
 
 p {
   font-family: "Barlow", sans-serif;
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: clamp(0.875rem, 1.6vw, 1.25rem);
   max-width: 100vw;
   text-align: center;
   padding: 0.9375rem 0.625rem;
@@ -61,7 +61,7 @@ a:hover {
   padding: 0.9375rem 1.5625rem;
   border-radius: 0.625rem;
   height: 6.25rem;
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: clamp(0.875rem, 1.6vw, 1.25rem);
 }
 .boton:hover {
   color: #fff;
@@ -89,7 +89,7 @@ header {
   z-index: 10;
   top: 0;
   width: 100%;
-  height: clamp(65px, 10vw, 130px);
+  height: clamp(4.0625rem, 10vw, 8.125rem);
   box-shadow: 0px 2px 10px #121212;
 }
 
@@ -108,7 +108,7 @@ header {
   display: flex;
   align-items: center;
   height: 100%;
-  max-width: min(251px, 60%);
+  max-width: min(15.6875rem, 60%);
 }
 
 .navbar-toggler {
@@ -117,8 +117,8 @@ header {
 
 .navbar-collapse {
   background-color: #262626;
-  margin: 8px -12px;
-  padding-left: 12px;
+  margin: 0.5rem -0.75rem;
+  padding-left: 0.75rem;
   box-shadow: 0px 2px 10px #121212;
 }
 @media only screen and (min-width: 992px) {
@@ -129,11 +129,11 @@ header {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
-  font-size: clamp(10px, 10px + 1vw, 20px);
+  font-size: clamp(0.625rem, 10px + 1vw, 1.25rem);
 }
 @media only screen and (min-width: 992px) {
   .navbar-dark .navbar-nav .nav-link {
-    font-size: clamp(10px, 4px + 1vw, 20px);
+    font-size: clamp(0.625rem, 4px + 1vw, 1.25rem);
   }
 }
 
@@ -177,18 +177,18 @@ nav li {
   align-items: center;
 }
 .hero-container .hero-banner .titulo {
-  font-size: clamp(45px, 8vw, 100px);
+  font-size: clamp(2.8125rem, 8vw, 6.25rem);
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 100;
   width: 100%;
 }
 .hero-container .hero-banner .subtitulo {
-  font-size: clamp(45px, 8vw, 100px);
+  font-size: clamp(2.8125rem, 8vw, 6.25rem);
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   width: 100%;
-  margin-top: -50px;
+  margin-top: -3.125rem;
 }
 .hero-container .hero-banner div .boton {
   color: #f183c3;
@@ -200,7 +200,7 @@ nav li {
 }
 @media only screen and (min-width: 992px) {
   .hero-container .hero-banner div a {
-    font-size: clamp(2vw, 3vh, 40px);
+    font-size: clamp(2vw, 3vh, 2.5rem);
   }
 }
 .hero-container .hero-banner div a:hover {
@@ -219,8 +219,8 @@ nav li {
 .conoceme .conoceme__foto-container {
   grid-area: foto;
   justify-self: center;
-  margin-top: 50px;
-  width: clamp(256px, 50vw, 550px);
+  margin-top: 3.125rem;
+  width: clamp(16rem, 50vw, 34.375rem);
 }
 .conoceme h1 {
   grid-area: titulo;
@@ -235,7 +235,7 @@ nav li {
   grid-area: parrafo;
   max-width: 90%;
   text-align: center;
-  padding: 15px 10px;
+  padding: 0.9375rem 0.625rem;
 }
 @media only screen and (min-width: 992px) {
   .conoceme p {
@@ -244,7 +244,7 @@ nav li {
   }
 }
 .conoceme .boton-conoceme {
-  margin: 20px auto;
+  margin: 1.25rem auto;
 }
 .conoceme .boton-conoceme a {
   grid-area: boton;
@@ -269,7 +269,7 @@ nav li {
 }
 
 .trabajos-container {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -279,12 +279,12 @@ nav li {
   color: #fff;
   text-align: center;
   font-weight: 900;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .trabajos-container .trabajos {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 @media only screen and (min-width: 992px) {
   .trabajos-container .trabajos {
@@ -297,12 +297,12 @@ nav li {
   }
 }
 .trabajos-container .trabajos article {
-  margin: 50px 0px;
-  width: 256px;
-  height: 256px;
+  margin: 3.125rem 0px;
+  width: 16rem;
+  height: 16rem;
   background-color: #2d2d2d;
-  border-radius: 20px;
-  box-shadow: 20px 20px 15px 0 #121212;
+  border-radius: 1.25rem;
+  box-shadow: 1.25rem 1.25rem 0.9375rem 0 #121212;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,8 +314,8 @@ nav li {
 }
 @media only screen and (min-width: 768px) {
   .trabajos-container .trabajos article {
-    width: 350px;
-    height: 450px;
+    width: 21.875rem;
+    height: 28.125rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -327,8 +327,8 @@ nav li {
 }
 @media only screen and (min-width: 992px) {
   .trabajos-container .trabajos article {
-    width: 300px;
-    height: 450px;
+    width: 18.75rem;
+    height: 28.125rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -336,7 +336,7 @@ nav li {
 }
 .trabajos-container .trabajos p {
   display: none;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 @media only screen and (min-width: 768px) {
   .trabajos-container .trabajos p {
@@ -344,10 +344,10 @@ nav li {
   }
 }
 .trabajos-container .trabajos .trabajos__boton-container {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .trabajos-container .trabajos a {
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .proyectos__container {
@@ -357,15 +357,15 @@ nav li {
 }
 .proyectos__container h2 {
   width: 90vw;
-  margin-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 3.125rem;
+  padding-bottom: 3.125rem;
   color: #f183c3;
 }
 .proyectos__container .proyectos__imgcont {
   display: grid;
   grid-template-columns: 2 1fr;
   grid-template-areas: "timestop timestop" "picky gilipollas" "bedel bedel" "interwarp conan" "kuki kuki";
-  gap: 3px 1.5px;
+  gap: 0.1875rem 0.0938rem;
 }
 @media only screen and (min-width: 1024px) {
   .proyectos__container .proyectos__imgcont {
@@ -388,12 +388,12 @@ nav li {
 }
 .proyectos__container .proyectos__imgcont .proyectos__img p {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: clamp(0.8125rem, 1.6vw, 1.125rem);
   font-weight: 900;
   text-transform: uppercase;
   position: absolute;
   visibility: hidden;
-  width: 150px;
+  width: 9.375rem;
   text-align: center;
   transform: translateY(-1000%);
 }
@@ -426,12 +426,12 @@ nav li {
 .proyectos__container .proyectos__imgcont .proyectos__img:hover .proyectos__texto {
   visibility: visible;
   opacity: 1;
-  transition: 1s;
+  transition: 0.8s;
   transform: translateY(0);
 }
 
 .habilidades {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   height: 470px;
   background-image: url(../img/fondorosa.webp);
   display: flex;
@@ -439,21 +439,21 @@ nav li {
   align-items: center;
 }
 .habilidades h3 {
-  font-size: clamp(30px, 6vw, 60px);
+  font-size: clamp(1.875rem, 6vw, 3.75rem);
   color: #fff;
-  padding-top: 50px;
+  padding-top: 3.125rem;
 }
 .habilidades .habilidades__logos {
   width: 70%;
-  padding-top: 35px;
+  padding-top: 2.1875rem;
   max-width: 1240px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .habilidades .habilidades__logos div {
-  width: min(120px, 19vw);
-  margin: 9px;
+  width: min(7.5rem, 19vw);
+  margin: 0.5625rem;
 }
 
 @-webkit-keyframes mover {
@@ -477,7 +477,7 @@ nav li {
     filter: drop-shadow(0px 25px 12px rgba(45, 45, 45, 0.9333333333));
   }
 }
-.illustrator {
+.illustrator, .wordpress, .corel, .after, .premiere, .photoshop {
   -webkit-animation-name: mover;
           animation-name: mover;
   -webkit-animation-duration: 1s;
@@ -490,18 +490,6 @@ nav li {
           animation-timing-function: ease-in-out;
 }
 
-.photoshop {
-  -webkit-animation-name: mover;
-          animation-name: mover;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
 @media only screen and (min-width: 1024px) {
   .photoshop {
     -webkit-animation-delay: 0.2s;
@@ -510,18 +498,8 @@ nav li {
 }
 
 .premiere {
-  -webkit-animation-name: mover;
-          animation-name: mover;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
 }
 @media only screen and (min-width: 416px) {
   .premiere {
@@ -537,18 +515,8 @@ nav li {
 }
 
 .after {
-  -webkit-animation-name: mover;
-          animation-name: mover;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
 }
 @media only screen and (min-width: 416px) {
   .after {
@@ -570,18 +538,8 @@ nav li {
 }
 
 .corel {
-  -webkit-animation-name: mover;
-          animation-name: mover;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
 }
 @media only screen and (min-width: 986px) {
   .corel {
@@ -597,18 +555,8 @@ nav li {
 }
 
 .wordpress {
-  -webkit-animation-name: mover;
-          animation-name: mover;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
 }
 @media only screen and (min-width: 1024px) {
   .wordpress {
@@ -621,13 +569,13 @@ nav li {
   max-width: 1240px;
   display: grid;
   grid-template-columns: 0.6fr 1.2fr;
-  gap: 6px;
+  gap: 0.375rem;
   grid-template-areas: "foto pagina" "foto contacto";
-  padding-top: 30px;
+  padding-top: 1.875rem;
 }
 .footer__container .footer__imgContainer {
   grid-area: foto;
-  width: clamp(100px, 20vw, 200px);
+  width: clamp(6.25rem, 20vw, 12.5rem);
   justify-self: end;
 }
 @media only screen and (min-width: 480px) {
@@ -636,7 +584,7 @@ nav li {
   }
 }
 .footer__container h3 {
-  font-size: clamp(16px, 10px + 1vw, 22px);
+  font-size: clamp(1rem, 10px + 1vw, 1.375rem);
   font-weight: 900;
   text-transform: uppercase;
   -webkit-text-decoration: underline #f183c3;
@@ -647,7 +595,7 @@ nav li {
 .footer__container .footer__paginas, .footer__container .footer__contacto {
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
+  margin-left: 0.9375rem;
   grid-area: pagina;
 }
 .footer__container .footer__contacto {
@@ -658,8 +606,8 @@ nav li {
   font-family: "Barlow", sans-serif;
 }
 .footer__container .footer__contacto p {
-  font-size: clamp(13px, 1.6vw, 18px);
-  margin-bottom: 6px;
+  font-size: clamp(0.8125rem, 1.6vw, 1.125rem);
+  margin-bottom: 0.375rem;
   text-align: start;
   padding: 0;
 }
@@ -667,24 +615,24 @@ nav li {
   padding-left: 0;
 }
 .footer__container ul .face .footer__logo {
-  width: clamp(8px, 1.6vw, 15px);
+  width: clamp(0.5rem, 1.6vw, 0.9375rem);
 }
 .footer__container ul li {
   display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 .footer__container ul li div {
-  width: clamp(15px, 1.6vw, 20px);
+  width: clamp(0.9375rem, 1.6vw, 1.25rem);
 }
 .footer__container a {
-  font-size: clamp(13px, 1.6vw, 18px);
+  font-size: clamp(0.8125rem, 1.6vw, 1.125rem);
 }
 @media only screen and (min-width: 480px) {
   .footer__container {
     display: grid;
     grid-template-columns: 2fr 2fr 3fr;
-    gap: 6px;
+    gap: 0.375rem;
     grid-template-areas: "foto pagina contacto";
   }
 }
@@ -697,11 +645,11 @@ nav li {
   justify-content: center;
   width: 100%;
   max-width: 1240px;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   background-image: url(../img/OhCherry-Background.webp);
   background-repeat: no-repeat;
   background-position: right center;
-  gap: 50px;
+  gap: 3.125rem;
 }
 .contactform__container .contactform__img {
   display: none;
@@ -718,7 +666,7 @@ nav li {
   justify-content: center;
 }
 .contactform__container .contact-form h2 {
-  font-size: clamp(30px, 6vw, 50px);
+  font-size: clamp(1.875rem, 6vw, 3.125rem);
 }
 
 .form-floating > .form-control {
@@ -736,7 +684,7 @@ nav li {
   color: #fff;
   background-color: #f183c3;
   border-color: #f183c3;
-  margin: 20px 0px;
+  margin: 1.25rem 0px;
   font-weight: 900;
 }
 
@@ -767,7 +715,7 @@ nav li {
 
 .contacto__section {
   background-color: #f183c3;
-  margin-top: 30px;
+  margin-top: 1.875rem;
   justify-content: center;
 }
 .contacto__section div {
@@ -778,7 +726,7 @@ nav li {
   justify-content: center;
 }
 .contacto__section .contacto__logos--container a {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 900;
   margin: 10%;
   color: #262626;
@@ -788,13 +736,13 @@ nav li {
 }
 @media only screen and (min-width: 768px) {
   .contacto__section .contacto__logos--container a {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin: 6%;
   }
 }
 @media only screen and (min-width: 992px) {
   .contacto__section .contacto__logos--container a {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }
 .contacto__section .contacto__logo {
@@ -803,7 +751,7 @@ nav li {
 }
 .contacto__section .contacto__logo img {
   width: 50%;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 @media only screen and (min-width: 768px) {
   .contacto__section {
@@ -813,7 +761,7 @@ nav li {
 }
 
 .hero__historia, .hero__web, .hero__grafico, .hero__ilustraciones, .hero__contacto {
-  margin-top: clamp(65px, 10vw, 130px);
+  margin-top: clamp(4.0625rem, 10vw, 8.125rem);
   background-image: url(../img/fondorosa.webp);
   background-size: cover;
 }
@@ -827,12 +775,12 @@ nav li {
 }
 
 .sobreMi {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   width: 90%;
   max-width: 1240px;
 }
 .sobreMi div {
-  width: clamp(256px, 50vw, 550px);
+  width: clamp(16rem, 50vw, 34.375rem);
   grid-area: s-foto;
 }
 @media only screen and (min-width: 992px) {
@@ -842,7 +790,7 @@ nav li {
     justify-items: start;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "s-foto s-titulo" "s-foto s-pparrafo" "s-foto s-sparrafo";
-    gap: 5px;
+    gap: 0.3125rem;
   }
 }
 .sobreMi h2 {
@@ -880,7 +828,7 @@ nav li {
   max-width: 1024px;
 }
 .trayectoria .trayectoria__container h2 {
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 @media only screen and (min-width: 992px) {
   .trayectoria .trayectoria__container h2 {
@@ -890,7 +838,7 @@ nav li {
   }
 }
 .trayectoria .trayectoria__container div {
-  width: clamp(256px, 30vw, 350px);
+  width: clamp(16rem, 30vw, 21.875rem);
 }
 @media only screen and (min-width: 992px) {
   .trayectoria .trayectoria__container div {
@@ -905,7 +853,7 @@ nav li {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "t-titulo t-foto" "t-pparrafo t-foto" "t-sparrafo t-foto";
     gap: 5px;
-    margin-top: 30px;
+    margin-top: 1.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -923,8 +871,8 @@ nav li {
 }
 
 .conocimientos {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 1.875rem;
+  margin-top: 1.875rem;
   max-width: 1024px;
 }
 .conocimientos .conocimientos__foto {
@@ -934,7 +882,7 @@ nav li {
   .conocimientos .conocimientos__foto {
     display: block;
     grid-area: c-foto;
-    width: clamp(256px, 30vw, 350px);
+    width: clamp(16rem, 30vw, 21.875rem);
     margin-right: 40px;
   }
 }
@@ -958,7 +906,7 @@ nav li {
 @media only screen and (min-width: 768px) {
   .conocimientos p {
     display: block;
-    margin: 10px 0px;
+    margin: 0.625rem 0px;
     grid-area: c-parrafo;
     text-align: start;
   }
@@ -970,7 +918,7 @@ nav li {
 .conocimientos__logo--container .conocimientos__logo {
   display: flex;
   align-items: center;
-  margin: 9px -11px 0px 3px;
+  margin: 0.5625rem -0.6875rem 0px 0.1875rem;
   flex-direction: column;
 }
 @media only screen and (min-width: 509px) {
@@ -979,13 +927,14 @@ nav li {
   }
 }
 .conocimientos__logo--container .conocimientos__logo .conocimientos__img {
-  width: 60px;
+  width: 3.75rem;
+  margin-bottom: 0.625rem;
 }
 .conocimientos__logo--container .conocimientos__logo h3 {
   color: #fff;
-  margin: 0px 5px;
+  margin: 0px 0.3125rem;
   text-align: center;
-  font-size: clamp(13px, 1.6vw, 18px);
+  font-size: clamp(0.8125rem, 1.6vw, 1.125rem);
 }
 @media only screen and (min-width: 509px) {
   .conocimientos__logo--container .conocimientos__logo h3 {
@@ -1019,13 +968,13 @@ nav li {
   max-width: 1024px;
 }
 .trabajos_ilustraciones {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .ilustraciones__video, .web__video {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   background-color: #f183c3;
-  padding: 20px 0px;
+  padding: 1.25rem 0px;
 }
 @media only screen and (min-width: 992px) {
   .ilustraciones__video, .web__video {
@@ -1035,19 +984,19 @@ nav li {
 
 .ilustraciones__video h2, .web__video h2 {
   grid-area: titulo;
-  font-size: clamp(30px, 4vw, 45px);
+  font-size: clamp(1.875rem, 4vw, 2.8125rem);
 }
 @media only screen and (min-width: 992px) {
   .ilustraciones__video h2, .web__video h2 {
     align-self: flex-end;
     text-align: start;
-    margin-left: 138px;
+    margin-left: 8.625rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .ilustraciones__video h2, .web__video h2 {
-    font-size: 45px;
-    margin-left: 50px;
+    font-size: 2.8125rem;
+    margin-left: 3.125rem;
   }
 }
 
@@ -1058,13 +1007,13 @@ nav li {
   .ilustraciones__video p, .web__video p {
     align-self: flex-start;
     text-align: start;
-    margin-left: 138px;
+    margin-left: 8.625rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .ilustraciones__video p, .web__video p {
-    font-size: 24px;
-    margin-left: 40px;
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
   }
 }
 
@@ -1087,29 +1036,29 @@ nav li {
   max-width: 620px;
   height: 51vw;
   max-height: 350px;
-  box-shadow: -10px 10px 10px rgba(38, 38, 38, 0.6588235294);
+  box-shadow: -0.625rem 0.625rem 0.625rem rgba(38, 38, 38, 0.6588235294);
   grid-area: video;
 }
 @media only screen and (min-width: 992px) {
   .video__container {
     align-self: flex-start;
-    margin-left: 50px;
+    margin-left: 3.125rem;
   }
 }
 
 .ilustraciones__empresas, .web__empresas, .grafico__empresas {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   background-color: #fff;
   width: 100%;
 }
 
 .ilustraciones__empresas h3, .web__empresas h3, .grafico__empresas h3 {
-  font-size: clamp(30px, 6vw, 60px);
-  padding-top: 30px;
+  font-size: clamp(1.875rem, 6vw, 3.75rem);
+  padding-top: 1.875rem;
 }
 
 .ilustraciones__logo--container, .web__logo--container, .grafico__logo--container {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   width: 100%;
   max-width: 1240px;
 }
@@ -1118,13 +1067,13 @@ nav li {
   max-width: 1024px;
 }
 .trabajos_grafico {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .grafico__video {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   background-color: #f183c3;
-  padding: 20px 0px;
+  padding: 1.25rem 0px;
 }
 @media only screen and (min-width: 992px) {
   .grafico__video {
@@ -1134,7 +1083,7 @@ nav li {
 
 .grafico__video h2 {
   grid-area: titulo;
-  font-size: clamp(30px, 4vw, 45px);
+  font-size: clamp(1.875rem, 4vw, 2.8125rem);
 }
 @media only screen and (min-width: 992px) {
   .grafico__video h2 {
@@ -1144,7 +1093,7 @@ nav li {
 }
 @media only screen and (min-width: 1024px) {
   .grafico__video h2 {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
 }
 
@@ -1159,7 +1108,7 @@ nav li {
 }
 @media only screen and (min-width: 1024px) {
   .grafico__video p {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
@@ -1184,15 +1133,15 @@ nav li {
 }
 
 .grafico__empresas h3 {
-  font-size: clamp(30px, 6vw, 60px);
-  padding-top: 30px;
+  font-size: clamp(1.875rem, 6vw, 3.75rem);
+  padding-top: 1.875rem;
 }
 
 .hero__web div {
   max-width: 1024px;
 }
 .trabajos_web {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1203,19 +1152,19 @@ nav li {
 
 .web__video h2 {
   grid-area: titulo;
-  font-size: clamp(30px, 4vw, 45px);
+  font-size: clamp(1.875rem, 4vw, 2.8125rem);
 }
 @media only screen and (min-width: 992px) {
   .web__video h2 {
     align-self: flex-end;
     text-align: start;
-    margin-left: 138px;
+    margin-left: 6.625rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .web__video h2 {
-    font-size: 45px;
-    margin-left: 50px;
+    font-size: 2.8125rem;
+    margin-left: 3.125rem;
   }
 }
 
@@ -1226,13 +1175,13 @@ nav li {
   .web__video p {
     align-self: flex-start;
     text-align: start;
-    margin-left: 138px;
+    margin-left: 6.625rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .web__video p {
-    font-size: 24px;
-    margin-left: 40px;
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
   }
 }
 
@@ -1244,7 +1193,7 @@ nav li {
 }
 @media only screen and (min-width: 992px) {
   .web__video article {
-    height: 400px;
+    height: 25rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "titulo video video" "parrafo video video";
   }
@@ -1253,11 +1202,11 @@ nav li {
 @media only screen and (min-width: 992px) {
   .video__container {
     align-self: flex-start;
-    margin-left: 50px;
+    margin-left: 3.125rem;
   }
 }
 
 .web__empresas h3 {
-  font-size: clamp(30px, 6vw, 60px);
-  padding-top: 30px;
+  font-size: clamp(1.875rem, 6vw, 3.75rem);
+  padding-top: 1.875rem;
 }/*# sourceMappingURL=style.css.map */

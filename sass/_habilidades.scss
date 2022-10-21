@@ -1,5 +1,5 @@
 .habilidades{
-    margin-top: 50px;
+    margin-top: 3.125rem;
     height: 470px;
     background-image: url(../img/fondorosa.webp);
     display: flex;
@@ -9,20 +9,20 @@
     h3{
         font-size: $responsive_size-l;
         color: $blanco;
-        padding-top: 50px;
+        padding-top: 3.125rem;
     }
 
     .habilidades__logos{
         width: 70%;
-        padding-top: 35px;
+        padding-top: 2.1875rem;
         max-width: 1240px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
 
         div{
-            width: min(120px, 19vw);
-            margin: 9px;
+            width: min(7.5rem, 19vw);
+            margin: 0.5625rem;
         }
     }
 }
@@ -48,11 +48,7 @@
 }
 
 .photoshop{
-    animation-name: mover;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    @extend .illustrator;
 
     @media only screen and (min-width: 1024px) {
         animation-delay: 0.20s;
@@ -60,12 +56,8 @@
 }
 
 .premiere{
-    animation-name: mover;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    @extend .illustrator;
     animation-delay: 0.20s;
-    animation-timing-function: ease-in-out;
 
     @media only screen and (min-width: 416px) {
         animation-delay: 0s;
@@ -76,12 +68,8 @@
 }
 
 .after{
-    animation-name: mover;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    @extend .illustrator;
     animation-delay: 0.20s;
-    animation-timing-function: ease-in-out;
 
     @media only screen and (min-width: 416px) {
         animation-delay: 0.40s;
@@ -95,12 +83,8 @@
 }
 
 .corel{
-    animation-name: mover;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    @extend .illustrator;
     animation-delay: 0.40s;
-    animation-timing-function: ease-in-out;
 
     @media only screen and (min-width: 986px) {
         animation-delay: 0s;
@@ -111,12 +95,8 @@
 }
 
 .wordpress{
-    animation-name: mover;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    @extend .illustrator;
     animation-delay: 0.40s;
-    animation-timing-function: ease-in-out;
 
     @media only screen and (min-width: 1024px) {  
         animation-delay: 1s;

@@ -17,7 +17,7 @@
     .conoceme__foto-container{
         grid-area: foto;
         justify-self: center;
-        margin-top: 50px;
+        margin-top: 3.125rem;
         width: $responsive_size-img-l;
     }
 
@@ -34,7 +34,7 @@
         grid-area: parrafo;
         max-width: 90%;
         text-align: center;
-        padding: 15px 10px;
+        padding: 0.9375rem 0.625rem;
 
         @media only screen and (min-width: 992px) {
                 text-align: start;
@@ -43,7 +43,7 @@
     }
 
     .boton-conoceme{
-        margin: 20px auto;
+        margin: 1.25rem auto;
 
         a{
             grid-area: boton;

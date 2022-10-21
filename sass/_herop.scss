@@ -28,7 +28,7 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
             width: 100%;
-            margin-top: -50px;
+            margin-top: -3.125rem;
         }
 
         div{
@@ -42,7 +42,7 @@
                 font-size:clamp(3vw, 3vh , 60px);
 
                 @media only screen and (min-width: 992px) {
-                        font-size: clamp(2vw, 3vh , 40px);
+                        font-size: clamp(2vw, 3vh , 2.5rem);
                     }
             }
             a:hover {

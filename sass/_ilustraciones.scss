@@ -11,13 +11,13 @@
 }
 
 .trabajos_ilustraciones{
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .ilustraciones__video{
-    margin-top: 40px;
+    margin-top: 2.5rem;
     background-color: $color_primario;
-    padding: 20px 0px;
+    padding: 1.25rem 0px;
 
     @media only screen and (min-width: 992px) {
         background: linear-gradient(90deg, rgba(241,131,195,1) 0%, rgba(241,131,195,1) 60%, rgba(45,45,45,1) 60%, rgba(45,45,45,1) 99%);
@@ -31,12 +31,12 @@
     @media only screen and (min-width: 992px) {
         align-self: flex-end;
         text-align: start;
-        margin-left: 138px;
+        margin-left: 8.625rem;
         }
 
     @media only screen and (min-width: 1024px) {
-        font-size: 45px ;
-        margin-left: 50px;
+        font-size: 2.8125rem ;
+        margin-left: 3.125rem;
         }
 }
 
@@ -46,12 +46,12 @@
     @media only screen and (min-width: 992px) {
         align-self: flex-start ;
         text-align: start;
-        margin-left: 138px;
+        margin-left: 8.625rem;
         }
 
     @media only screen and (min-width: 1024px) {
-        font-size: 24px;
-        margin-left: 40px;
+        font-size: 1.5rem;
+        margin-left: 2.5rem;
         }
 }
 
@@ -74,27 +74,27 @@
 .video__container {
     @include ancho (90vw, 620px);
     @include alto (51vw, 350px);
-    box-shadow: -10px 10px 10px #262626a8 ;
+    box-shadow: -0.625rem 0.625rem 0.625rem #262626a8 ;
     grid-area: video;
 
     @media only screen and (min-width: 992px) {
             align-self: flex-start;
-            margin-left: 50px;
+            margin-left: 3.125rem;
         }
 }
 
 .ilustraciones__empresas{
-    margin-top: 40px;
+    margin-top: 2.5rem;
     background-color: $blanco;
     width: 100%;
 }
 
 .ilustraciones__empresas h3{
     font-size: $responsive_size-l;
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 
 .ilustraciones__logo--container{
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     @include ancho (100%, 1240px);
 }

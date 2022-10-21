@@ -11,13 +11,13 @@
 }
 
 .trabajos_grafico{
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .grafico__video{
-    margin-top: 40px;
+    margin-top: 2.5rem;
     background-color: $color_primario;
-    padding: 20px 0px;
+    padding: 1.25rem 0px;
 
     @media only screen and (min-width: 992px) {
         background: linear-gradient(45deg, rgba(45,45,45,1) 20%, rgba(241,131,195,1) 20%, rgba(241,131,195,1) 24%, rgba(45,45,45,1) 24%, rgba(45,45,45,1) 25%, rgba(241,131,195,1) 25%);
@@ -34,7 +34,7 @@
         }
 
     @media only screen and (min-width: 1024px) {
-        font-size: 45px ;
+        font-size: 2.8125rem ;
         }
 }
 
@@ -47,7 +47,7 @@
         }
 
     @media only screen and (min-width: 1024px) {
-        font-size: 24px;
+        font-size: 1.5rem;
         }
 }
 
@@ -81,7 +81,7 @@
 
 .grafico__empresas h3{
     font-size: $responsive_size-l;
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 
 .grafico__logo--container{

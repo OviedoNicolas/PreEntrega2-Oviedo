@@ -14,11 +14,11 @@
     display: flex;
     justify-content: center;
     @include ancho (100%, 1240px);
-    margin-top: 20px;
+    margin-top: 1.25rem;
     background-image: url(../img/OhCherry-Background.webp);
     background-repeat: no-repeat;
     background-position: right center;
-    gap: 50px;
+    gap: 3.125rem;
 
     .contactform__img{
         display: none;
@@ -35,7 +35,7 @@
         justify-content: center;
 
         h2{
-            font-size: clamp(30px, 6vw, 50px);
+            font-size: clamp(1.875rem, 6vw, 3.125rem);
         }
     }
 }
@@ -55,7 +55,7 @@
     color: $blanco;
     background-color: $color_primario;
     border-color: $color_primario;
-    margin: 20px 0px;
+    margin: 1.25rem 0px;
     font-weight: 900;
 }
 
@@ -86,7 +86,7 @@
 
 .contacto__section{
     background-color: $color_primario;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     justify-content: center;
 
     div{
@@ -98,7 +98,7 @@
     }
 
     .contacto__logos--container a{
-        font-size: 12px ;
+        font-size: 0.75rem ;
         font-weight: 900;
         margin: 10%;
         color: $color_secundario;
@@ -108,12 +108,12 @@
         }
         
         @media only screen and (min-width: 768px) {
-                font-size: 14px;
+                font-size: 0.875rem;
                 margin: 6%;
             }
 
         @media only screen and (min-width: 992px) {
-                font-size: 15px;
+                font-size: 0.9375rem;
             }
     }
     
@@ -124,7 +124,7 @@
     
     .contacto__logo img{
         width: 50%;
-        margin-top: 10px;
+        margin-top: 0.625rem;
     }
 
     @media only screen and (min-width: 768px) {

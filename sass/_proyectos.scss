@@ -5,8 +5,8 @@
 
     h2{
         width: 90vw;
-        margin-top: 50px;
-        padding-bottom: 50px;
+        margin-top: 3.125rem;
+        padding-bottom: 3.125rem;
         color: $color_primario;
     }
 
@@ -19,7 +19,7 @@
         "bedel bedel"
         "interwarp conan"
         "kuki kuki";
-        gap: 3px 1.5px;
+        gap: 0.1875rem 0.0938rem;
 
         @media only screen and (min-width: 1024px) {
                 grid-template-columns: 6 1fr;
@@ -44,12 +44,12 @@
 
             p{
                 font-family: 'Montserrat', sans-serif;
-                font-size: 15px;
+                font-size: $responsive_size-paragraph-s;
                 font-weight: 900;
                 text-transform: uppercase;
                 position: absolute;
                 visibility: hidden ;
-                width: 150px;
+                width: 9.375rem;
                 text-align: center;
                 transform: translateY(-1000%);
             }
@@ -91,7 +91,7 @@
         .proyectos__img:hover .proyectos__texto{
             visibility: visible;
             opacity: 1;
-            transition: 1s;
+            transition: 0.8s;
             transform: translateY(0);
         }
     }
