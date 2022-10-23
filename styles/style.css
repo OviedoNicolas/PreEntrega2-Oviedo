@@ -276,6 +276,7 @@ nav li {
   background: linear-gradient(45deg, rgb(241, 131, 195) 0%, rgb(241, 131, 195) 25%, rgba(9, 9, 121, 0) 25%, rgba(230, 125, 192, 0) 75%, rgb(241, 131, 195) 75%, rgb(241, 131, 195) 100%);
 }
 .trabajos-container h2 {
+  padding-top: 20px;
   color: #fff;
   text-align: center;
   font-weight: 900;
